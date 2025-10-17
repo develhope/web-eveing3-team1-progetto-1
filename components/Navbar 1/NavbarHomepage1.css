@@ -1,0 +1,144 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: transparent;
+}
+.icona-arancione img {
+  height: 40px;
+}
+.nav-centrale {
+  display: flex;
+  list-style: none;
+  padding-left: 300px;
+}
+.nav-centrale a {
+  display: flex;
+  text-decoration: none; /*x togliere la line blu del link*/
+  color: #242e30;
+  align-items: center; /*x centrare le icone con la scritta*/
+  gap: 5px; /*distanza tra icona e scritte*/
+  border-radius: 25px;
+  padding: 24px; /*distanza tra i bottoni*/
+  font-size: 20px;
+  font-weight: 700;
+}
+.nav-centrale a:hover {
+  background-color: #f5f5f5;
+  height: 20px;
+}
+.nav-dx {
+  display: flex;
+  text-decoration: none; /*x togliere la line blu del link*/
+  color: #242e30;
+  align-items: center; /*x centrare in altezza*/
+  border-radius: 25px;
+}
+.nav-dx a {
+  display: flex;
+  text-decoration: none; /*x togliere la line blu del link*/
+  color: #242e30;
+  align-items: center; /*x centrare le icone con la scritta*/
+  gap: 5px; /*distanza tra icona e scritte*/
+  border-radius: 25px;
+  padding: 24px; /*distanza tra i bottoni*/
+  font-size: 20px;
+  font-weight: 700;
+}
+.nav-dx a:hover {
+  background-color: #f5f5f5;
+  height: 20px;
+}
+.accedi {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: #242e30;
+  padding: 8px 20px;
+  border-radius: 25px;
+}
+.accedi:hover {
+  background-color: #f5f5f5;
+  height: 20px;
+}
+/*bandiera*/
+.nav-dx svg {
+  width: 24px;
+  height: 24px;
+  padding: 8px 12px;
+  border-radius: 25px;
+}
+.nav-dx svg:hover {
+  background-color: #f5f5f5;
+  height: 20px;
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column; /*fa allineare le 3 linette una sopra l'altra*/
+  width: 20px;
+  height: 18px;
+  justify-content: space-around;
+  border-radius: 25px;
+  padding: 8px 12px;
+}
+.hamburger-menu div {
+  /*indica ogni linetta in particolare*/
+  height: 2px;
+  background-color: #242e30;
+}
+.hamburger-menu:hover {
+  background-color: #f5f5f5;
+  height: 20px;
+}
+/*telefono*/
+@media screen and (max-width: 720px) {
+  .nav-centrale {
+    display: none;
+  }
+  /*bandiera */
+  .nav-dx svg {
+    display: none;
+  }
+  .accedi {
+    display: flex;
+  }
+  .hamburger-menu {
+    display: flex;
+  }
+}
+/*tablet*/
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  .nav-centrale {
+    display: none;
+  }
+  .accedi {
+    display: flex;
+  }
+  .nav-dx svg {
+    display: block;
+  }
+  .hamburger-menu {
+    display: flex;
+  }
+}
+/*pc*/
+@media screen and (min-width: 1025px) {
+  .nav-centrale {
+    display: flex;
+  }
+  .accedi {
+    display: flex;
+  }
+  .nav-dx svg {
+    display: block;
+  }
+  .hamburger-menu {
+    display: flex;
+  }
+  span {
+    white-space: nowrap; /*x tenere gli span in un unica linea*/
+  }
+}
