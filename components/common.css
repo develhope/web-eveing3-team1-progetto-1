@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "JETSansDigital";
+  src: url("https://d30v2pzvrfyzpo.cloudfront.net/fonts/JETSansDigital-Regular-optimised-extended.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JETSansDigital";
+  src: url("https://d30v2pzvrfyzpo.cloudfront.net/fonts/JETSansDigital-Bold-optimised.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
