@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: JETSansDigital, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+@font-face {
+  font-family: "JETSansDigital";
+  src: url("https://d30v2pzvrfyzpo.cloudfront.net/fonts/JETSansDigital-Regular-optimised-extended.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JETSansDigital";
+  src: url("https://d30v2pzvrfyzpo.cloudfront.net/fonts/JETSansDigital-Bold-optimised.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.box-scarica-app {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c1dade;
+  padding: 40px 80px;
+  padding-bottom: 0;
+}
+
+article {
+  padding-left: 120px;
+}
+
+.scarica-app {
+  font-size: 3.3rem;
+  padding-bottom: 15px;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.76);
+}
+
+.descrizione-scarica-app {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-bottom: 35px;
+  color: rgba(0, 0, 0, 0.76);
+}
+
+.immagine-telefono {
+  display: flex;
+  padding-right: 100px;
+  padding-bottom: 0;
+  margin-right: 60px;
+}
+.scarica-app-ios {
+  margin-right: 10px;
+}
+.scarica-app-ios:hover {
+  cursor: pointer;
+}
+
+.scarica-app-android:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 320px) {
+  article {
+    padding-left: 10px;
+  }
+  .telefono {
+    width: 0;
+  }
+  .box-scarica-app {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 575px) {
+  .telefono {
+    width: 50px;
+  }
+  .box-scarica-app {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  h2 {
+    font-size: 1.9rem; /*non sono riuscito a diminuire la grandezza del font */
+  }
+  .box-scarica-app {
+    flex-direction: column;
+  }
+  .immagine-telefono {
+    text-align: center;
+  }
+  .telefono {
+    width: 90px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .telefono {
+    width: 160px;
+  }
+}
