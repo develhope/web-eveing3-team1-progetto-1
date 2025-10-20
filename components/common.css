@@ -1,3 +1,7 @@
+/*
+  reset css degli stili
+*/
+
 @font-face {
   font-family: "JETSansDigital";
   src: url("https://d30v2pzvrfyzpo.cloudfront.net/fonts/JETSansDigital-Regular-optimised-extended.woff2")
@@ -13,3 +17,11 @@
   font-weight: 700;
   font-style: normal;
 }
+
+/*
+  utilizzo del font su tutto il documento
+*/
+
+/*
+  variabili riutilizzabili con i colori principali
+*/
