@@ -22,6 +22,16 @@
   utilizzo del font su tutto il documento
 */
 
+html,
+body {
+  font-family: "JetSansDigital";
+  font-weight: 400;
+}
 /*
   variabili riutilizzabili con i colori principali
 */
+.root {
+  --primary-color: #fb6100;
+  --secondary-color: #b6866f;
+  --button-color: #f6f3ef;
+}
