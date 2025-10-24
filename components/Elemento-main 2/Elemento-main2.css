@@ -5,14 +5,16 @@
 }
 .search {
   height: 50px;
-  border-radius: 50px;
+  border-radius: 30px;
 }
 input {
-  padding: 8px 12px 8px 36px; /* spazio a sinistra per l’icona */
-  border-radius: 20px;
+  padding: 8px 12px 8px 50px; /* spazio a sinistra per l’icona */
+  border-radius: 50px;
   border: 1px solid gray;
   height: 30px;
-  width: 200px;
+  width: 300px;
+  font-weight: 400;
+  font-size: 15px;
   font-family: JETSansDigital, -apple-system, BlinkMacSystemFont, Segoe UI,
     Helvetica Neue, Helvetica, Arial, sans-serif;
 }
@@ -23,12 +25,17 @@ input {
 }
 select {
   border-radius: 15px;
-  height: 40px;
-  width: 200px;
+  height: 50px;
+  width: 250px;
   border: 1px solid gray;
   font-family: JETSansDigital, -apple-system, BlinkMacSystemFont, Segoe UI,
     Helvetica Neue, Helvetica, Arial, sans-serif;
+  padding-left: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(70, 65, 65);
 }
+
 .maps {
   border-radius: 50px;
   border: 0; /*x togliere il bordo nero al bottone*/
@@ -46,7 +53,7 @@ da 1025 in poi si vede tutto il resto*/
   }
   .search svg {
     display: flex;
-    fill: orange;
+    fill: #f36805;
   }
   span {
     display: none;
@@ -56,5 +63,6 @@ da 1025 in poi si vede tutto il resto*/
   }
   .maps {
     display: flex;
+    color: #f36805;
   }
 }
