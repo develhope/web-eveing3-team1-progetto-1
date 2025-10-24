@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  margin-top: 20px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.card-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 10px;
+  list-style: none;
+}
+
+.card-list > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.img-pizza,
+.img-italian,
+.img-panini,
+.img-hamburger,
+.img-fried,
+.img-sushi-japanese,
+.img-poke,
+.img-gastronomy {
+  height: 89.97px;
+  width: 121.99px;
+  border-radius: 10px;
+  display: block;
+}
+
+.img-pizza {
+  background-color: var(--primary-color);
+}
+.img-italian {
+  background-color: rgb(100, 27, 148);
+}
+.img-panini {
+  background-color: #fb4100;
+}
+.img-hamburger {
+  background-color: #ffd600;
+}
+.img-fried {
+  background-color: rgb(54, 186, 89);
+}
+.img-sushi-japanese {
+  background-color: #c1dade;
+}
+.img-poke {
+  background-color: #ffbbba;
+}
+.img-gastronomy {
+  background-color: rgb(65, 19, 96);
+}
+
+.img-pizza:hover {
+  cursor: pointer;
+}
+
+.img-italian:hover {
+  cursor: pointer;
+}
+
+.img-panini:hover {
+  cursor: pointer;
+}
+
+.img-hamburger:hover {
+  cursor: pointer;
+}
+
+.img-fried:hover {
+  cursor: pointer;
+}
+
+.img-sushi-japanese:hover {
+  cursor: pointer;
+}
+
+.img-poke:hover {
+  cursor: pointer;
+}
+
+.img-gastronomy {
+  cursor: pointer;
+}
+
+/* selettore per selezionare i nomi delle classi che iniziano per name- */
+[class^="name-"] {
+  font-size: 0.9rem;
+  text-align: left;
+  font-weight: 400;
+  width: 100%;
+}
+
+.show-more {
+  font-weight: 700;
+  font-size: 1rem;
+  height: 89.97px;
+  width: 121.99px;
+  border: 1px solid rgb(148, 148, 148);
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  transition: background-color 0.2s;
+}
+
+.show-more:hover {
+  background-color: #f5f5f5;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .card-list {
+    gap: 8px;
+  }
+}
