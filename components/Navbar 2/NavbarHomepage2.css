@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: JETSansDigital, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.navbar {
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  padding: 0 20px;
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+/*parte sinistra*/
+.left-side {
+  display: flex;
+  align-items: center;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.icon-JustEat {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.first-part-icon,
+.second-part-icon {
+  height: 40px;
+}
+
+/*parte centro*/
+.central-side {
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  grid-row: 1;
+}
+
+li a {
+  text-decoration: none;
+}
+
+/*1 bottone*/
+.first-button {
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  padding: 10px 25px;
+  text-decoration: none;
+  background-color: #f6f3ef;
+}
+
+.icon-maps {
+  fill: #f36805;
+}
+
+.first-button a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px; /*distanza tra icona e scritta*/
+}
+
+.first-button span {
+  white-space: nowrap; /*x tenere il testo dei bottoni su una linea*/
+  color: black;
+  font-weight: 600;
+  font-family: JETSansDigital, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.first-button:hover {
+  background-color: #e0ddd8;
+}
+
+/*2 e 3 bottone*/
+.two-buttons {
+  display: flex;
+  align-items: center;
+  background-color: #f6f3ef;
+  border-radius: 25px;
+}
+
+.two-buttons a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px; /*distanza tra icona e scritta*/
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+/*2 bottone*/
+.second-button {
+  border-radius: 25px;
+}
+
+.icon-bike {
+  fill: #f36805;
+}
+
+.second-button span {
+  white-space: nowrap;
+  color: black;
+  font-weight: 600;
+}
+
+.second-button:hover {
+  background-color: white;
+  border: 2px solid #f6f3ef;
+  border-radius: 25px;
+}
+
+/*3 bottone*/
+.third-button {
+  background-color: transparent;
+  border-radius: 25px;
+}
+
+.icon-ritiro {
+  fill: #f36805;
+}
+
+.third-button span {
+  white-space: nowrap;
+  color: black;
+  font-weight: 600;
+}
+
+.third-button:hover {
+  background-color: white;
+  border: 2px solid #f6f3ef;
+  border-radius: 25px;
+}
+
+/*parte dx*/
+.right-side {
+  grid-column: 3;
+  display: flex;
+  justify-content: flex-end; /*x allinearli a dx*/
+  grid-row: 1;
+  color: #242e30;
+  border-radius: 25px;
+  gap: 30px; /*distanza tra i due elementi*/
+}
+
+/*bandiera*/
+.right-side svg {
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  box-sizing: content-box;
+  padding: 5px;
+}
+
+.right-side svg:hover {
+  background-color: #f5f5f5;
+  border-radius: 50%;
+}
+
+/*menu hamburger*/
+.hamburger-menu {
+  flex-direction: column;
+  width: 20px;
+  height: 20px;
+  justify-content: space-around;
+  border-radius: 25px;
+  display: inline-flex;
+  box-sizing: content-box;
+  padding: 5px;
+}
+
+.hamburger-menu div {
+  height: 2px;
+  background-color: #242e30;
+}
+
+.hamburger-menu:hover {
+  background-color: #f5f5f5;
+  border-radius: 50%;
+}
+
+/* MEDIA QUERY - sotto 1220px i bottoni vanno in seconda riga */
+@media screen and (max-width: 1020px) {
+  .navbar {
+    grid-template-columns: auto 1fr auto;
+  }
+
+  .central-side {
+    grid-column: 2;
+    grid-row: 1 / 3; /*occupa entrambi le righe*/
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .first-button {
+    margin-top: 10px; /*spazio sopra al bottone*/
+    align-self: center;
+    max-width: 250px;
+  }
+
+  .two-buttons {
+    grid-column: 1 / -1; /*x occupare tutte le colonne*/
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .right-side svg {
+    display: none;
+  }
+  .second-part-icon {
+    display: none;
+  }
+}
