@@ -1,0 +1,57 @@
+.sezione-carte {
+  margin: 24px auto;
+  width: min(1200px, 94vw);
+}
+.testata-sezione {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.titolo-sezione {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f2328;
+}
+.azione-sezione {
+  font-size: 14px;
+  text-decoration: none;
+  color: #0d6efd;
+}
+
+.corridoio-carte {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: clamp(260px, 28vw, 360px);
+  gap: 18px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 6px 4px 6px 2px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.corridoio-carte > .carta-ristorante {
+  scroll-snap-align: start;
+}
+
+.corridoio-carte::-webkit-scrollbar {
+  height: 10px;
+}
+.corridoio-carte::-webkit-scrollbar-track {
+  background: transparent;
+}
+.corridoio-carte::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 999px;
+}
+
+@media (max-width: 375px) {
+  .sezione-carte {
+    width: min(360px, 94vw);
+  }
+  .corridoio-carte {
+    gap: 14px;
+  }
+}

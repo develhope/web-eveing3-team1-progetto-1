@@ -1,0 +1,124 @@
+:root {
+  --raggio: 14px;
+  --bordo: #eceff1;
+  --ombra: 0 6px 16px rgba(0, 0, 0, 0.12);
+  --testo: #1f2328;
+  --muted: #6b727a;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #f6f7f9;
+  margin: 20px;
+  font: 15px/1.35 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--testo);
+}
+.carta-ristorante {
+  width: min(100%, 360px);
+  background: #fff;
+  border: 1px solid var(--bordo);
+  border-radius: var(--raggio);
+  box-shadow: var(--ombra);
+  overflow: hidden;
+}
+.vetrina {
+  position: relative;
+  height: 170px;
+}
+.vetrina img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.logo-ristorante {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 3px solid #fff;
+  background: #0a0;
+}
+.logo-ristorante img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.corpo {
+  padding: 14px 16px 16px;
+}
+.titolo {
+  margin: 0 0 10px;
+  font-weight: 700;
+  font-size: 18px;
+}
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.pallino {
+  width: 4px;
+  height: 4px;
+  background: #b8bdc2;
+  border-radius: 50%;
+}
+.stella {
+  font-size: 18px;
+}
+.consegna {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+}
+@media (min-width: 768px) {
+  .carta-ristorante {
+    width: 380px;
+  }
+  .vetrina {
+    height: 190px;
+  }
+}
+@media (max-width: 375px) {
+  body {
+    margin: 16px;
+  }
+  .vetrina {
+    height: 150px;
+  }
+  .logo-ristorante {
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    left: 10px;
+  }
+  .corpo {
+    padding: 12px 14px 14px;
+  }
+  .titolo {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+}
+.griglia-carte {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+@media (max-width: 768px) {
+  .griglia-carte {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 375px) {
+  .griglia-carte {
+    grid-template-columns: 1fr;
+  }
+}
