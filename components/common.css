@@ -30,7 +30,7 @@ body {
 /*
   variabili riutilizzabili con i colori principali
 */
-.root {
+:root {
   --primary-color: #fb6100;
   --secondary-color: #b6866f;
   --button-color: #f6f3ef;

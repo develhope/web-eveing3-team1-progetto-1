@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "JETSansDigital";
+  font-weight: 400;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 16px 0px 16px;
+  height: 659.6px;
+  width: 308px;
+}
+
+.sidebar p {
+  margin-bottom: 15px;
+}
+
+.first-section label.control-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.first-section,
+.second-section-info,
+.valutation,
+.sale-info,
+.last-section-info {
+  font-weight: 700;
+}
+
+.second-section ul,
+.list-price-checkbox ul {
+  list-style: none;
+}
+
+.list-price li {
+  margin: 15px 0px;
+}
+
+.radio-item input[type="radio"] {
+  display: none;
+}
+
+.radio-item .custom-radio {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+  position: relative;
+}
+
+.radio-item input[type="radio"]:checked + .custom-radio::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: white;
+}
+.radio-item input[type="radio"]:checked + .custom-radio {
+  background-color: var(--primary-color);
+}
+
+.valutazione-stelle {
+  display: flex;
+  color: var(--primary-color);
+  margin: 15px 0;
+}
+
+.i-circle-icon {
+  fill: var(--primary-color);
+}
+.sale-info,
+.second-section-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.list-pricee li {
+  margin: 15px 0;
+}
+
+.last-section {
+  display: grid;
+}
+
+.last-section-info {
+  margin: 15px 0;
+}
+
+#aperto-adesso,
+#nuovo,
+#consegna-gratuita {
+  display: none;
+}
+
+.switch {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.slider {
+  background-color: gray;
+  border: 1px solid gray;
+  width: 44px;
+  height: 20px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.switch .slider::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 2px;
+  top: 1px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.4s;
+}
+
+.switch input:checked + .label-text + .slider {
+  background-color: green;
+}
+
+.switch input:checked + .label-text + .slider::before {
+  transform: translatex(22px);
+}
+
+svg {
+  cursor: pointer;
+}
+.valutazione-stelle {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+.valutazione-stelle label:hover svg,
+.valutazione-stelle label:hover ~ label svg {
+  stroke: var(--primary-color);
+}
