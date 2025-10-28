@@ -1,1 +1,13 @@
 /* qui ci sono i css di tutte le task */
+@import url(/web-eveing3-team1-progetto-1/components/Button/taskButton.css);
+@import url(/web-eveing3-team1-progetto-1/components/Card_1/CardHomepage1.css);
+@import url(/web-eveing3-team1-progetto-1/components/Card_2/card2.css);
+@import url(/web-eveing3-team1-progetto-1/components/Elemento-main_2/Elemento-main2.css);
+@import url(/web-eveing3-team1-progetto-1/components/Footer/footer.css);
+@import url(/web-eveing3-team1-progetto-1/components/Griglie/griglie.css);
+@import url(/web-eveing3-team1-progetto-1/components/Navbar_1/NavbarHomepage1.css);
+@import url(/web-eveing3-team1-progetto-1/components/Navbar_2/NavbarHomepage2.css);
+@import url(/web-eveing3-team1-progetto-1/components/SezioneRicerca/ScaricaApp/scaricaapp.css);
+@import url(/web-eveing3-team1-progetto-1/components/SezioneRicerca/ScaricaApp/homeJE.css);
+@import url(/web-eveing3-team1-progetto-1/components/Sidebar/sidebar.css);
+@import url(/web-eveing3-team1-progetto-1/components/Card_Homepage/cardHomepage.css);
