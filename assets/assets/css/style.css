@@ -17,15 +17,19 @@
 .sidebar_main {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  grid-row: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .sidebar {
   display: grid;
   grid-column: 1/2;
+  grid-row: 1/-1;
   order: 1;
 }
-.navbar_main {
-  display: grid;
-  grid-column: 2/3;
+
+.navbar-main {
+  display: flex;
   order: 2;
+  gap: 40px;
+  margin-top: 10px;
 }
