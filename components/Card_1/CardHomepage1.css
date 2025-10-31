@@ -102,4 +102,14 @@ h2 {
     flex: 256px;
     min-width: 256px; /*non si ristringono oltre*/
   }
+  .prima-card svg,
+  .seconda-card svg,
+  .terza-card svg {
+    width: 80px;
+    height: 80px;
+  }
+  .icona_just_eat svg {
+    height: 32px;
+    width: 133px;
+  }
 }

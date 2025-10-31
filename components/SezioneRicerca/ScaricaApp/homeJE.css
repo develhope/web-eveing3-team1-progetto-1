@@ -152,7 +152,7 @@ svg {
     transform: rotate();
   }
 
-  svg {
+  .middle-section svg polygon {
     width: 100vw;
     height: auto;
   }

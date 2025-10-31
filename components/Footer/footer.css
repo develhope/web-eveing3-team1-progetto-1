@@ -152,7 +152,7 @@ hr {
   border: none;
   border-top: 1px solid #c4b5a1;
   margin: 10px auto;
-  width: 95%;
+  width: 100%;
 }
 
 .final-list {
@@ -256,6 +256,21 @@ hr {
 
 .item-center-catene {
   grid-column: 2/3;
+}
+
+.scritta-justeat {
+  margin: 0 0 0 0;
+  padding: 10px 0px 10px 0;
+  background-color: #f0ece6;
+}
+
+.final-list {
+  margin: 0;
+  padding: 15px;
+}
+
+hr {
+  margin: 0;
 }
 
 @media (max-width: 720px) {
