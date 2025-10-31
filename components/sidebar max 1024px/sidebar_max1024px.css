@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "JETSansDigital";
+  font-weight: 700;
+}
+.sidebar-main div {
+  padding: 0 0 12px 12px;
+}
+.sidebar-main,
+.list-sidebar {
+  display: flex;
+}
+
+.list-sidebar {
+  list-style: none;
+  gap: 12px;
+}
+.list-sidebar li {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  border: 1px solid rgb(218, 221, 209);
+  border-radius: 20px;
+  padding: 5px 12px;
+  height: 32px;
+  cursor: pointer;
+  color: rgb(0, 0, 0, 0.76);
+}
+
+.list-sidebar li div {
+  display: flex;
+  align-items: center;
+}
+
+.icon-offerte {
+  border: 1px solid #f6c243;
+  border-radius: 50%;
+  background-color: #f6c243;
+  height: 16px;
+  width: 16px;
+}
+.icon-filter {
+  height: 20px;
+  width: 20px;
+}
+
+@media (min-width: 1024px) {
+  * {
+    display: none;
+  }
+}
