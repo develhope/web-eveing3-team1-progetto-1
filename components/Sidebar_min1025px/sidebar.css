@@ -160,3 +160,9 @@ svg {
 .valutazione-stelle label:hover ~ label svg {
   stroke: var(--primary-color);
 }
+
+@media (max-width: 1025px) {
+  .sidebaar {
+    display: none;
+  }
+}
