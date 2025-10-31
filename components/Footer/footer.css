@@ -258,9 +258,33 @@ hr {
 }
 
 @media (max-width: 720px) {
-  .footer label,
-  .footer-right label {
-    font-size: 16px;
+  .footer-justeat label svg,
+  .footer-right label svg,
+  .box label svg {
+    width: 14px;
+    height: 14px;
+  }
+  .list-box-logo li img,
+  .list-box-logo li svg {
+    width: 30px;
+    height: 30px;
+  }
+  .footer,
+  .footer-right,
+  .footer-justeat,
+  .final-list,
+  .list-elements,
+  .scritta-justeat {
+    background-color: #f0ece6;
+  }
+  .scritta-justeat {
+    margin: 0px;
+  }
+  .final-list {
+    margin-top: 0px;
+  }
+  hr {
+    display: none;
   }
 }
 
@@ -281,17 +305,20 @@ hr {
     grid-template-columns: 1fr;
     padding: 40px 0px 20px 0px;
     gap: 0;
+    background-color: #f0ece6;
   }
 
   .final-list {
     justify-content: flex-start;
     padding-left: 20px;
+    margin-top: 0px;
   }
   .list-elements {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
   }
+
   hr {
     display: none;
   }
@@ -299,8 +326,30 @@ hr {
     text-align: left;
     margin-left: 20px;
     margin-right: 0;
+    background-color: #f0ece6;
+    margin: 0px;
+    margin-left: 20px;
   }
   .footer-justeat {
     border-bottom: 1px solid #c4b5a165;
+  }
+  .footer-justeat label svg,
+  .footer-right label svg,
+  .box label svg {
+    width: 14px;
+    height: 14px;
+  }
+  .list-box-logo li img,
+  .list-box-logo li svg {
+    width: 30px;
+    height: 30px;
+  }
+  .footer,
+  .footer-right,
+  .footer-justeat,
+  .final-list,
+  .list-elements,
+  .scritta-justeat {
+    background-color: #f0ece6;
   }
 }
