@@ -60,7 +60,7 @@ da 1025 in poi si vede tutto il resto*/
     display: flex;
     fill: #f36805;
   }
-  span {
+  .ordinaPer {
     display: none;
   }
   select {
