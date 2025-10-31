@@ -11,10 +11,11 @@ body {
   font-weight: 400;
 }
 
-.container {
+.containerTopCard {
   margin-top: 20px;
   margin-left: 150px;
   margin-right: 150px;
+  margin-bottom: 20px;
 }
 
 .card-list {
@@ -31,6 +32,7 @@ body {
   align-items: center;
   gap: 8px;
   flex-shrink: 0;
+  height: auto;
 }
 
 .img-pizza,

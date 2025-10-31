@@ -159,6 +159,7 @@ hr {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  background-color: #f0ece6;
 }
 
 .list-elements {

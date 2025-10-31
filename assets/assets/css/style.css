@@ -9,6 +9,23 @@
 @import url(../../../components/Navbar_2/NavbarHomepage2.css);
 @import url(../../../components/SezioneRicerca/ScaricaApp/scaricaapp.css);
 @import url(../../../components/SezioneRicerca/ScaricaApp/homeJE.css);
-@import url(../../../components/Sidebar/sidebar.css);
+@import url(../../../components/sidebar_max1024px/sidebar_max1024px.css);
+@import url(../../../components/Sidebar_min1025px/sidebar.css);
 @import url(../../../components/Card_Homepage/cardHomepage.css);
 @import url(../../../components/TopCard/topCard.css);
+
+.sidebar_main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.sidebar {
+  display: grid;
+  grid-column: 1/2;
+  order: 1;
+}
+.navbar_main {
+  display: grid;
+  grid-column: 2/3;
+  order: 2;
+}
