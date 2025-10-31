@@ -13,6 +13,7 @@
 @import url(../../../components/Sidebar_min1025px/sidebar.css);
 @import url(../../../components/Card_Homepage/cardHomepage.css);
 @import url(../../../components/TopCard/topCard.css);
+@import url(../../../components/Ristoranti/ristoranti.css);
 
 .sidebar_main {
   display: grid;
