@@ -1,57 +1,78 @@
+@import url(/web-eveing3-team1-progetto-1/components/Card_2/card2.css);
+
+:root {
+  --gap: 30px;
+}
+
 .sezione-carte {
+  position: relative;
   margin: 24px auto;
   width: min(1200px, 94vw);
 }
+
+#consegna-gratis {
+  background: #f6c243;
+  color: #2d2200;
+  border-radius: 10px;
+  padding: 6px 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  line-height: 1;
+}
+#consegna-gratis .icona-bici svg {
+  width: 16px;
+  height: 16px;
+}
+
 .testata-sezione {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
   margin-bottom: 12px;
-}
-.titolo-sezione {
-  margin: 0;
-  font-size: 20px;
-  font-weight: 700;
-  color: #1f2328;
-}
-.azione-sezione {
-  font-size: 14px;
-  text-decoration: none;
-  color: #0d6efd;
 }
 
 .corridoio-carte {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: clamp(260px, 28vw, 360px);
-  gap: 18px;
+  grid-auto-columns: calc((100% - (2 * var(--gap))) / 3);
+  gap: 40px;
   overflow-x: auto;
   overflow-y: hidden;
-  padding: 6px 4px 6px 2px;
   scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  padding-bottom: 6px;
 }
-.corridoio-carte > .carta-ristorante {
+
+.carta-ristorante {
   scroll-snap-align: start;
 }
 
+/* SCROLLBAR   */
 .corridoio-carte::-webkit-scrollbar {
   height: 10px;
 }
 .corridoio-carte::-webkit-scrollbar-track {
-  background: transparent;
-}
-.corridoio-carte::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.15);
+  background: #e9ecef;
   border-radius: 999px;
 }
+.corridoio-carte::-webkit-scrollbar-thumb {
+  background: #b9c1cc;
+  border-radius: 999px;
+}
+.corridoio-carte::-webkit-scrollbar-thumb:hover {
+  background: #a1a9b5;
+}
 
-@media (max-width: 375px) {
-  .sezione-carte {
-    width: min(360px, 94vw);
-  }
+/* RESPONSIVE */
+@media (max-width: 1024px) {
   .corridoio-carte {
-    gap: 14px;
+    grid-auto-columns: calc((100% - var(--gap)) / 2);
+  }
+}
+@media (max-width: 600px) {
+  .corridoio-carte {
+    grid-auto-columns: 100%;
   }
 }

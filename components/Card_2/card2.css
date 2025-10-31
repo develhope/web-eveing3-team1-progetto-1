@@ -5,15 +5,19 @@
   --testo: #1f2328;
   --muted: #6b727a;
 }
+
 * {
   box-sizing: border-box;
 }
+
 body {
   background: #f6f7f9;
   margin: 20px;
   font: 15px/1.35 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color: var(--testo);
 }
+
+/* CARD */
 .carta-ristorante {
   width: min(100%, 360px);
   background: #fff;
@@ -22,6 +26,28 @@ body {
   box-shadow: var(--ombra);
   overflow: hidden;
 }
+
+.icona-bici svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+  color: var(--muted); /* usa lo stesso colore del testo */
+}
+
+.icona-orologio svg {
+  width: 15px;
+  height: 15px;
+  display: block;
+  color: var(--muted); /* stesso colore del testo secondario */
+}
+
+.tempo {
+  display: flex;
+  align-items: center;
+  gap: 6px; /* spazio tra icona e testo */
+}
+
+/* COVER */
 .vetrina {
   position: relative;
   height: 170px;
@@ -32,10 +58,13 @@ body {
   object-fit: cover;
   display: block;
 }
+
+/* LOGO — spostato in basso a sinistra */
 .logo-ristorante {
   position: absolute;
-  top: 12px;
   left: 12px;
+  bottom: 12px; /* ⬅️ ora in basso */
+  top: auto; /* ⬅️ disattiva il posizionamento alto */
   width: 48px;
   height: 48px;
   border-radius: 10px;
@@ -48,6 +77,8 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
+/* BODY */
 .corpo {
   padding: 14px 16px 16px;
 }
@@ -64,20 +95,30 @@ body {
   margin-bottom: 8px;
 }
 .pallino {
-  width: 4px;
-  height: 4px;
+  width: 2px;
+  height: 2px;
   background: #b8bdc2;
   border-radius: 50%;
 }
 .stella {
-  font-size: 18px;
+  display: flex;
+  align-items: center;
 }
+
+.stella svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
 .consegna {
   display: flex;
   align-items: center;
   gap: 8px;
   color: var(--muted);
 }
+
+/* RESPONSIVE */
 @media (min-width: 768px) {
   .carta-ristorante {
     width: 380px;
@@ -86,6 +127,7 @@ body {
     height: 190px;
   }
 }
+
 @media (max-width: 375px) {
   body {
     margin: 16px;
@@ -96,8 +138,9 @@ body {
   .logo-ristorante {
     width: 40px;
     height: 40px;
-    top: 10px;
     left: 10px;
+    bottom: 10px; /* ⬅️ mantiene il logo in basso su mobile */
+    top: auto;
   }
   .corpo {
     padding: 12px 14px 14px;
@@ -107,6 +150,8 @@ body {
     margin-bottom: 8px;
   }
 }
+
+/* (opzionale) Griglia statica a colonne quando non usi lo slider */
 .griglia-carte {
   display: grid;
   gap: 24px;

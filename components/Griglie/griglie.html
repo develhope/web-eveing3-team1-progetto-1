@@ -3,186 +3,1746 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Griglia Card</title>
+    <title>Griglie Scorrevoli</title>
 
     <link
       rel="stylesheet"
-      href="/WEB DEVELOPER/web-eveing3-team1-progetto-1/components/Card 2/card2.css"
+      href="/web-eveing3-team1-progetto-1/components/Griglie/griglie.css"
     />
-    <link rel="stylesheet" href="griglie.css" />
   </head>
 
   <body>
-    <section class="sezione-carte">
+    <!-- ========== GRIGLIA 1 ========== -->
+    <section class="sezione-carte" id="grid-1">
       <div class="testata-sezione">
-        <h2 class="titolo-sezione">Ristoranti Consigliati</h2>
+        <h2 class="titolo-sezione">I brand più amati</h2>
         <a class="azione-sezione" href="#">Vedi tutto</a>
       </div>
 
       <div class="corridoio-carte">
-        <!-- 👇  INCOLLA LA  CARD -->
+        <!-- Card 1 -->
         <article class="carta-ristorante">
           <div class="vetrina">
             <img
-              src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1200&auto=format&fit=crop"
+              src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_thumb,w_721,h_320/f_auto/q_auto/dpr_2.0/d_it:cuisines:panzerotti-2.jpg/v1/it/restaurants/221422"
+              alt="Copertina ristorante"
             />
             <div class="logo-ristorante">
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/5/59/McDonald%27s_logo.svg"
+                src="https://d2egcvq7li5bpq.cloudfront.net/it/images/restaurants/221422.gif"
+                alt="Logo ristorante"
+              />
+            </div>
+          </div>
+
+          <div class="corpo">
+            <h3 class="titolo">Luini</h3>
+
+            <div class="meta">
+              <span class="stella" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="m12.288 14.449-4.183-2.197a.219.219 0 0 0-.21 0L3.713 14.45 4.5 9.794a.254.254 0 0 0 0-.193L1.07 6.302l4.673-.682a.228.228 0 0 0 .166-.114L8 1.271l2.091 4.235a.227.227 0 0 0 .167.114l4.672.682-3.386 3.3a.254.254 0 0 0-.061.192l.805 4.655Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="voto">4,4</span>
+              <span class="pallino"></span>
+
+              <span class="tempo">
+                <span class="icona-orologio" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                      d="M8 14.781A6.782 6.782 0 1 1 14.781 8 6.79 6.79 0 0 1 8 14.781Zm0-12.25A5.469 5.469 0 1 0 8 13.47 5.469 5.469 0 0 0 8 2.53Z"
+                    ></path>
+                    <path
+                      d="m10.284 10.31-2.94-1.759V4.5h1.312v3.308l2.31 1.382-.682 1.12Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>12-22 min</span>
+              </span>
+            </div>
+
+            <div class="consegna" id="consegna-gratis">
+              <span class="icona-bici" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="M12.139 7.405 11 4.158a.218.218 0 0 1 0-.157.246.246 0 0 1 .158-.123l1.216-.446v-1.4l-1.627.613a1.514 1.514 0 0 0-.998 1.933l.359 1.015H9.75a2.433 2.433 0 0 0-1.925.963l-1.207 1.61-1.06-2.135h.692V4.718h-3.5v1.313H4.09l.726 1.461a2.87 2.87 0 0 0-.735-.105 2.826 2.826 0 1 0 2.826 2.818v-.201l1.97-2.66a1.111 1.111 0 0 1 .874-.438h.831l.254.717a2.844 2.844 0 1 0 1.313-.218h-.01Zm-8.059 4.314a1.514 1.514 0 1 1 1.514-1.514 1.505 1.505 0 0 1-1.514 1.514Zm7.875 0a1.514 1.514 0 1 1 1.401-.934 1.505 1.505 0 0 1-1.4.934Z"
+                  ></path>
+                </svg>
+              </span>
+              <span>Consegna gratuita</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="carta-ristorante">
+          <div class="vetrina">
+            <img
+              src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_thumb,w_721,h_320/f_auto/q_auto/dpr_2.0/d_it:cuisines:poke-0.jpg/v1/it/restaurants/229460"
+              alt="Copertina ristorante"
+            />
+            <div class="logo-ristorante">
+              <img
+                src="https://d2egcvq7li5bpq.cloudfront.net/it/images/restaurants/229460.gif"
+                alt="Logo ristorante"
+              />
+            </div>
+          </div>
+
+          <div class="corpo">
+            <h3 class="titolo">Poke House - Tribunale</h3>
+
+            <div class="meta">
+              <span class="stella" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="m12.288 14.449-4.183-2.197a.219.219 0 0 0-.21 0L3.713 14.45 4.5 9.794a.254.254 0 0 0 0-.193L1.07 6.302l4.673-.682a.228.228 0 0 0 .166-.114L8 1.271l2.091 4.235a.227.227 0 0 0 .167.114l4.672.682-3.386 3.3a.254.254 0 0 0-.061.192l.805 4.655Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="voto">4,1</span>
+              <span class="pallino"></span>
+
+              <span class="tempo">
+                <span class="icona-orologio" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                      d="M8 14.781A6.782 6.782 0 1 1 14.781 8 6.79 6.79 0 0 1 8 14.781Zm0-12.25A5.469 5.469 0 1 0 8 13.47 5.469 5.469 0 0 0 8 2.53Z"
+                    ></path>
+                    <path
+                      d="m10.284 10.31-2.94-1.759V4.5h1.312v3.308l2.31 1.382-.682 1.12Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>25-40 min</span>
+              </span>
+            </div>
+
+            <div class="consegna">
+              <span class="icona-bici" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="M12.139 7.405 11 4.158a.218.218 0 0 1 0-.157.246.246 0 0 1 .158-.123l1.216-.446v-1.4l-1.627.613a1.514 1.514 0 0 0-.998 1.933l.359 1.015H9.75a2.433 2.433 0 0 0-1.925.963l-1.207 1.61-1.06-2.135h.692V4.718h-3.5v1.313H4.09l.726 1.461a2.87 2.87 0 0 0-.735-.105 2.826 2.826 0 1 0 2.826 2.818v-.201l1.97-2.66a1.111 1.111 0 0 1 .874-.438h.831l.254.717a2.844 2.844 0 1 0 1.313-.218h-.01Zm-8.059 4.314a1.514 1.514 0 1 1 1.514-1.514 1.505 1.505 0 0 1-1.514 1.514Zm7.875 0a1.514 1.514 0 1 1 1.401-.934 1.505 1.505 0 0 1-1.4.934Z"
+                  ></path>
+                </svg>
+              </span>
+              <span>€2,99 Consegna</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="carta-ristorante">
+          <div class="vetrina">
+            <img
+              src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_thumb,w_721,h_320/f_auto/q_auto/dpr_2.0/d_it:cuisines:piadine-0.jpg/v1/it/restaurants/229440"
+              alt="Copertina ristorante"
+            />
+            <div class="logo-ristorante">
+              <img
+                src="https://d2egcvq7li5bpq.cloudfront.net/it/images/restaurants/229440.gif"
+                alt="Logo ristorante"
+              />
+            </div>
+          </div>
+
+          <div class="corpo">
+            <h3 class="titolo">La Piadineria - San Babila</h3>
+
+            <div class="meta">
+              <span class="stella" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="m12.288 14.449-4.183-2.197a.219.219 0 0 0-.21 0L3.713 14.45 4.5 9.794a.254.254 0 0 0 0-.193L1.07 6.302l4.673-.682a.228.228 0 0 0 .166-.114L8 1.271l2.091 4.235a.227.227 0 0 0 .167.114l4.672.682-3.386 3.3a.254.254 0 0 0-.061.192l.805 4.655Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="voto">4,3</span>
+              <span class="pallino"></span>
+
+              <span class="tempo">
+                <span class="icona-orologio" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                      d="M8 14.781A6.782 6.782 0 1 1 14.781 8 6.79 6.79 0 0 1 8 14.781Zm0-12.25A5.469 5.469 0 1 0 8 13.47 5.469 5.469 0 0 0 8 2.53Z"
+                    ></path>
+                    <path
+                      d="m10.284 10.31-2.94-1.759V4.5h1.312v3.308l2.31 1.382-.682 1.12Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>10-20 min</span>
+              </span>
+            </div>
+
+            <div class="consegna">
+              <span class="icona-bici" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="M12.139 7.405 11 4.158a.218.218 0 0 1 0-.157.246.246 0 0 1 .158-.123l1.216-.446v-1.4l-1.627.613a1.514 1.514 0 0 0-.998 1.933l.359 1.015H9.75a2.433 2.433 0 0 0-1.925.963l-1.207 1.61-1.06-2.135h.692V4.718h-3.5v1.313H4.09l.726 1.461a2.87 2.87 0 0 0-.735-.105 2.826 2.826 0 1 0 2.826 2.818v-.201l1.97-2.66a1.111 1.111 0 0 1 .874-.438h.831l.254.717a2.844 2.844 0 1 0 1.313-.218h-.01Zm-8.059 4.314a1.514 1.514 0 1 1 1.514-1.514 1.505 1.505 0 0 1-1.514 1.514Zm7.875 0a1.514 1.514 0 1 1 1.401-.934 1.505 1.505 0 0 1-1.4.934Z"
+                  ></path>
+                </svg>
+              </span>
+              <span>€1,49 Consegna</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="carta-ristorante">
+          <div class="vetrina">
+            <img
+              src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_thumb,w_721,h_320/f_auto/q_auto/dpr_2.0/d_it:cuisines:pizza-9.jpg/v1/it/restaurants/272079"
+              alt="Copertina ristorante"
+            />
+            <div class="logo-ristorante">
+              <img
+                src="https://d2egcvq7li5bpq.cloudfront.net/it/images/restaurants/272079.gif"
+                alt="Logo ristorante"
+              />
+            </div>
+          </div>
+
+          <div class="corpo">
+            <h3 class="titolo">Alice Pizza - Sforza</h3>
+
+            <div class="meta">
+              <span class="stella" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="m12.288 14.449-4.183-2.197a.219.219 0 0 0-.21 0L3.713 14.45 4.5 9.794a.254.254 0 0 0 0-.193L1.07 6.302l4.673-.682a.228.228 0 0 0 .166-.114L8 1.271l2.091 4.235a.227.227 0 0 0 .167.114l4.672.682-3.386 3.3a.254.254 0 0 0-.061.192l.805 4.655Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="voto">4,5</span>
+              <span class="pallino"></span>
+
+              <span class="tempo">
+                <span class="icona-orologio" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                      d="M8 14.781A6.782 6.782 0 1 1 14.781 8 6.79 6.79 0 0 1 8 14.781Zm0-12.25A5.469 5.469 0 1 0 8 13.47 5.469 5.469 0 0 0 8 2.53Z"
+                    ></path>
+                    <path
+                      d="m10.284 10.31-2.94-1.759V4.5h1.312v3.308l2.31 1.382-.682 1.12Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>18-30 min</span>
+              </span>
+            </div>
+
+            <div class="consegna" id="consegna-gratis">
+              <span class="icona-bici" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="M12.139 7.405 11 4.158a.218.218 0 0 1 0-.157.246.246 0 0 1 .158-.123l1.216-.446v-1.4l-1.627.613a1.514 1.514 0 0 0-.998 1.933l.359 1.015H9.75a2.433 2.433 0 0 0-1.925.963l-1.207 1.61-1.06-2.135h.692V4.718h-3.5v1.313H4.09l.726 1.461a2.87 2.87 0 0 0-.735-.105 2.826 2.826 0 1 0 2.826 2.818v-.201l1.97-2.66a1.111 1.111 0 0 1 .874-.438h.831l.254.717a2.844 2.844 0 1 0 1.313-.218h-.01Zm-8.059 4.314a1.514 1.514 0 1 1 1.514-1.514 1.505 1.505 0 0 1-1.514 1.514Zm7.875 0a1.514 1.514 0 1 1 1.401-.934 1.505 1.505 0 0 1-1.4.934Z"
+                  ></path>
+                </svg>
+              </span>
+              <span>Consegna gratuita</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="carta-ristorante">
+          <div class="vetrina">
+            <img
+              src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_thumb,w_721,h_320/f_auto/q_auto/dpr_2.0/d_it:cuisines:pizza-6.jpg/v1/it/restaurants/256276"
+              alt="Copertina ristorante"
+            />
+            <div class="logo-ristorante">
+              <img
+                src="https://d2egcvq7li5bpq.cloudfront.net/it/images/restaurants/256276.gif"
+                alt="Logo ristorante"
+              />
+            </div>
+          </div>
+
+          <div class="corpo">
+            <h3 class="titolo">
+              Rom'Antica | La Pizza Alla Romana - Via dell'Orso
+            </h3>
+
+            <div class="meta">
+              <span class="stella" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="m12.288 14.449-4.183-2.197a.219.219 0 0 0-.21 0L3.713 14.45 4.5 9.794a.254.254 0 0 0 0-.193L1.07 6.302l4.673-.682a.228.228 0 0 0 .166-.114L8 1.271l2.091 4.235a.227.227 0 0 0 .167.114l4.672.682-3.386 3.3a.254.254 0 0 0-.061.192l.805 4.655Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="voto">4,2</span>
+              <span class="pallino"></span>
+
+              <span class="tempo">
+                <span class="icona-orologio" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                      d="M8 14.781A6.782 6.782 0 1 1 14.781 8 6.79 6.79 0 0 1 8 14.781Zm0-12.25A5.469 5.469 0 1 0 8 13.47 5.469 5.469 0 0 0 8 2.53Z"
+                    ></path>
+                    <path
+                      d="m10.284 10.31-2.94-1.759V4.5h1.312v3.308l2.31 1.382-.682 1.12Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>22-38 min</span>
+              </span>
+            </div>
+
+            <div class="consegna">
+              <span class="icona-bici" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="M12.139 7.405 11 4.158a.218.218 0 0 1 0-.157.246.246 0 0 1 .158-.123l1.216-.446v-1.4l-1.627.613a1.514 1.514 0 0 0-.998 1.933l.359 1.015H9.75a2.433 2.433 0 0 0-1.925.963l-1.207 1.61-1.06-2.135h.692V4.718h-3.5v1.313H4.09l.726 1.461a2.87 2.87 0 0 0-.735-.105 2.826 2.826 0 1 0 2.826 2.818v-.201l1.97-2.66a1.111 1.111 0 0 1 .874-.438h.831l.254.717a2.844 2.844 0 1 0 1.313-.218h-.01Zm-8.059 4.314a1.514 1.514 0 1 1 1.514-1.514 1.505 1.505 0 0 1-1.514 1.514Zm7.875 0a1.514 1.514 0 1 1 1.401-.934 1.505 1.505 0 0 1-1.4.934Z"
+                  ></path>
+                </svg>
+              </span>
+              <span>€3,49 Consegna</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="carta-ristorante">
+          <div class="vetrina">
+            <img
+              src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_thumb,w_721,h_320/f_auto/q_auto/dpr_2.0/d_it:cuisines:sushi-1.jpg/v1/it/restaurants/261181"
+              alt="Copertina ristorante"
+            />
+            <div class="logo-ristorante">
+              <img
+                src="https://d2egcvq7li5bpq.cloudfront.net/it/images/restaurants/261181.gif"
+                alt="Logo ristorante"
+              />
+            </div>
+          </div>
+
+          <div class="corpo">
+            <h3 class="titolo">Bomaki - Porta Venezia</h3>
+
+            <div class="meta">
+              <span class="stella" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="m12.288 14.449-4.183-2.197a.219.219 0 0 0-.21 0L3.713 14.45 4.5 9.794a.254.254 0 0 0 0-.193L1.07 6.302l4.673-.682a.228.228 0 0 0 .166-.114L8 1.271l2.091 4.235a.227.227 0 0 0 .167.114l4.672.682-3.386 3.3a.254.254 0 0 0-.061.192l.805 4.655Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="voto">4,6</span>
+              <span class="pallino"></span>
+
+              <span class="tempo">
+                <span class="icona-orologio" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                      d="M8 14.781A6.782 6.782 0 1 1 14.781 8 6.79 6.79 0 0 1 8 14.781Zm0-12.25A5.469 5.469 0 1 0 8 13.47 5.469 5.469 0 0 0 8 2.53Z"
+                    ></path>
+                    <path
+                      d="m10.284 10.31-2.94-1.759V4.5h1.312v3.308l2.31 1.382-.682 1.12Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>20-30 min</span>
+              </span>
+            </div>
+
+            <div class="consegna" id="consegna-gratis">
+              <span class="icona-bici" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="M12.139 7.405 11 4.158a.218.218 0 0 1 0-.157.246.246 0 0 1 .158-.123l1.216-.446v-1.4l-1.627.613a1.514 1.514 0 0 0-.998 1.933l.359 1.015H9.75a2.433 2.433 0 0 0-1.925.963l-1.207 1.61-1.06-2.135h.692V4.718h-3.5v1.313H4.09l.726 1.461a2.87 2.87 0 0 0-.735-.105 2.826 2.826 0 1 0 2.826 2.818v-.201l1.97-2.66a1.111 1.111 0 0 1 .874-.438h.831l.254.717a2.844 2.844 0 1 0 1.313-.218h-.01Zm-8.059 4.314a1.514 1.514 0 1 1 1.514-1.514 1.505 1.505 0 0 1-1.514 1.514Zm7.875 0a1.514 1.514 0 1 1 1.401-.934 1.505 1.505 0 0 1-1.4.934Z"
+                  ></path>
+                </svg>
+              </span>
+              <span>Consegna gratuita</span>
+            </div>
+          </div>
+        </article>
+        <!-- Roadhouse - Via Larga -->
+        <article class="carta-ristorante">
+          <div class="vetrina">
+            <img
+              src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_thumb,w_721,h_320/f_auto/q_auto/dpr_2.0/d_it:cuisines:hamburger-2.jpg/v1/it/restaurants/289532"
+              alt="Copertina ristorante"
+            />
+            <div class="logo-ristorante">
+              <img
+                src="https://d2egcvq7li5bpq.cloudfront.net/it/images/restaurants/289532.gif"
+                alt="Logo ristorante"
               />
             </div>
           </div>
           <div class="corpo">
-            <h3 class="titolo">McDonald's - Piazza Garibaldi</h3>
+            <h3 class="titolo">Roadhouse - Via Larga</h3>
             <div class="meta">
-              <span class="stella">★</span><strong>4,1</strong
-              ><span>(1.300+)</span> <span class="pallino"></span
-              ><span>15-35 min</span>
+              <span class="stella" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="m12.288 14.449-4.183-2.197a.219.219 0 0 0-.21 0L3.713 14.45 4.5 9.794a.254.254 0 0 0 0-.193L1.07 6.302l4.673-.682a.228.228 0 0 0 .166-.114L8 1.271l2.091 4.235a.227.227 0 0 0 .167.114l4.672.682-3.386 3.3a.254.254 0 0 0-.061.192l.805 4.655Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="voto">3,9</span>
+              <span class="pallino"></span>
+              <span class="tempo">
+                <span class="icona-orologio" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                      d="M8 14.781A6.782 6.782 0 1 1 14.781 8 6.79 6.79 0 0 1 8 14.781Zm0-12.25A5.469 5.469 0 1 0 8 13.47 5.469 5.469 0 0 0 8 2.53Z"
+                    ></path>
+                    <path
+                      d="m10.284 10.31-2.94-1.759V4.5h1.312v3.308l2.31 1.382-.682 1.12Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>20-32 min</span>
+              </span>
             </div>
             <div class="consegna">
-              <span>🚴</span><span>0,49€ Consegna</span>
+              <span class="icona-bici" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="M12.139 7.405 11 4.158a.218.218 0 0 1 0-.157.246.246 0 0 1 .158-.123l1.216-.446v-1.4l-1.627.613a1.514 1.514 0 0 0-.998 1.933l.359 1.015H9.75a2.433 2.433 0 0 0-1.925.963l-1.207 1.61-1.06-2.135h.692V4.718h-3.5v1.313H4.09l.726 1.461a2.87 2.87 0 0 0-.735-.105 2.826 2.826 0 1 0 2.826 2.818v-.201l1.97-2.66a1.111 1.111 0 0 1 .874-.438h.831l.254.717a2.844 2.844 0 1 0 1.313-.218h-.01Zm-8.059 4.314a1.514 1.514 0 1 1 1.514-1.514 1.505 1.505 0 0 1-1.514 1.514Zm7.875 0a1.514 1.514 0 1 1 1.401-.934 1.505 1.505 0 0 1-1.4.934Z"
+                  ></path>
+                </svg>
+              </span>
+              <span>€1,99 Consegna</span>
             </div>
           </div>
         </article>
+
         <article class="carta-ristorante">
           <div class="vetrina">
             <img
-              src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1200&auto=format&fit=crop"
+              src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_thumb,w_721,h_320/f_auto/q_auto/dpr_2.0/d_it:cuisines:hamburger-0.jpg/v1/it/restaurants/215420"
+              alt="Copertina ristorante"
             />
             <div class="logo-ristorante">
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/5/59/McDonald%27s_logo.svg"
+                src="https://d2egcvq7li5bpq.cloudfront.net/it/images/restaurants/215420.gif"
+                alt="Logo ristorante"
               />
             </div>
           </div>
           <div class="corpo">
-            <h3 class="titolo">McDonald's - Piazza Garibaldi</h3>
+            <h3 class="titolo">Hamerica's - Premuda</h3>
             <div class="meta">
-              <span class="stella">★</span><strong>4,1</strong
-              ><span>(1.300+)</span> <span class="pallino"></span
-              ><span>15-35 min</span>
+              <span class="stella" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="m12.288 14.449-4.183-2.197a.219.219 0 0 0-.21 0L3.713 14.45 4.5 9.794a.254.254 0 0 0 0-.193L1.07 6.302l4.673-.682a.228.228 0 0 0 .166-.114L8 1.271l2.091 4.235a.227.227 0 0 0 .167.114l4.672.682-3.386 3.3a.254.254 0 0 0-.061.192l.805 4.655Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="voto">4,0</span>
+              <span class="pallino"></span>
+              <span class="tempo">
+                <span class="icona-orologio" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                      d="M8 14.781A6.782 6.782 0 1 1 14.781 8 6.79 6.79 0 0 1 8 14.781Zm0-12.25A5.469 5.469 0 1 0 8 13.47 5.469 5.469 0 0 0 8 2.53Z"
+                    ></path>
+                    <path
+                      d="m10.284 10.31-2.94-1.759V4.5h1.312v3.308l2.31 1.382-.682 1.12Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>18-28 min</span>
+              </span>
             </div>
-            <div class="consegna">
-              <span>🚴</span><span>0,49€ Consegna</span>
+            <div class="consegna" id="consegna-gratis">
+              <span class="icona-bici" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="M12.139 7.405 11 4.158a.218.218 0 0 1 0-.157.246.246 0 0 1 .158-.123l1.216-.446v-1.4l-1.627.613a1.514 1.514 0 0 0-.998 1.933l.359 1.015H9.75a2.433 2.433 0 0 0-1.925.963l-1.207 1.61-1.06-2.135h.692V4.718h-3.5v1.313H4.09l.726 1.461a2.87 2.87 0 0 0-.735-.105 2.826 2.826 0 1 0 2.826 2.818v-.201l1.97-2.66a1.111 1.111 0 0 1 .874-.438h.831l.254.717a2.844 2.844 0 1 0 1.313-.218h-.01Zm-8.059 4.314a1.514 1.514 0 1 1 1.514-1.514 1.505 1.505 0 0 1-1.514 1.514Zm7.875 0a1.514 1.514 0 1 1 1.401-.934 1.505 1.505 0 0 1-1.4.934Z"
+                  ></path>
+                </svg>
+              </span>
+              <span>Consegna gratuita</span>
             </div>
           </div>
         </article>
+
         <article class="carta-ristorante">
           <div class="vetrina">
             <img
-              src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1200&auto=format&fit=crop"
+              src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_thumb,w_721,h_320/f_auto/q_auto/dpr_2.0/d_it:cuisines:kebab-6.jpg/v1/it/restaurants/259956"
+              alt="Copertina ristorante"
             />
             <div class="logo-ristorante">
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/5/59/McDonald%27s_logo.svg"
+                src="https://d2egcvq7li5bpq.cloudfront.net/it/images/restaurants/259956.gif"
+                alt="Logo ristorante"
               />
             </div>
           </div>
           <div class="corpo">
-            <h3 class="titolo">McDonald's - Piazza Garibaldi</h3>
+            <h3 class="titolo">KEBHOUZE - 5 Giornate</h3>
             <div class="meta">
-              <span class="stella">★</span><strong>4,1</strong
-              ><span>(1.300+)</span> <span class="pallino"></span
-              ><span>15-35 min</span>
+              <span class="stella" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="m12.288 14.449-4.183-2.197a.219.219 0 0 0-.21 0L3.713 14.45 4.5 9.794a.254.254 0 0 0 0-.193L1.07 6.302l4.673-.682a.228.228 0 0 0 .166-.114L8 1.271l2.091 4.235a.227.227 0 0 0 .167.114l4.672.682-3.386 3.3a.254.254 0 0 0-.061.192l.805 4.655Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="voto">3,7</span>
+              <span class="pallino"></span>
+              <span class="tempo">
+                <span class="icona-orologio" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                      d="M8 14.781A6.782 6.782 0 1 1 14.781 8 6.79 6.79 0 0 1 8 14.781Zm0-12.25A5.469 5.469 0 1 0 8 13.47 5.469 5.469 0 0 0 8 2.53Z"
+                    ></path>
+                    <path
+                      d="m10.284 10.31-2.94-1.759V4.5h1.312v3.308l2.31 1.382-.682 1.12Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>12-24 min</span>
+              </span>
             </div>
             <div class="consegna">
-              <span>🚴</span><span>0,49€ Consegna</span>
+              <span class="icona-bici" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="M12.139 7.405 11 4.158a.218.218 0 0 1 0-.157.246.246 0 0 1 .158-.123l1.216-.446v-1.4l-1.627.613a1.514 1.514 0 0 0-.998 1.933l.359 1.015H9.75a2.433 2.433 0 0 0-1.925.963l-1.207 1.61-1.06-2.135h.692V4.718h-3.5v1.313H4.09l.726 1.461a2.87 2.87 0 0 0-.735-.105 2.826 2.826 0 1 0 2.826 2.818v-.201l1.97-2.66a1.111 1.111 0 0 1 .874-.438h.831l.254.717a2.844 2.844 0 1 0 1.313-.218h-.01Zm-8.059 4.314a1.514 1.514 0 1 1 1.514-1.514 1.505 1.505 0 0 1-1.514 1.514Zm7.875 0a1.514 1.514 0 1 1 1.401-.934 1.505 1.505 0 0 1-1.4.934Z"
+                  ></path>
+                </svg>
+              </span>
+              <span>€0,99 Consegna</span>
             </div>
           </div>
         </article>
+
         <article class="carta-ristorante">
           <div class="vetrina">
             <img
-              src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1200&auto=format&fit=crop"
+              src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_thumb,w_721,h_320/f_auto/q_auto/dpr_2.0/d_it:cuisines:hamburger-2.jpg/v1/it/restaurants/259942"
+              alt="Copertina ristorante"
             />
             <div class="logo-ristorante">
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/5/59/McDonald%27s_logo.svg"
+                src="https://d2egcvq7li5bpq.cloudfront.net/it/images/restaurants/259942.gif"
+                alt="Logo ristorante"
               />
             </div>
           </div>
           <div class="corpo">
-            <h3 class="titolo">McDonald's - Piazza Garibaldi</h3>
+            <h3 class="titolo">Doppio Malto - Milano Duomo</h3>
             <div class="meta">
-              <span class="stella">★</span><strong>4,1</strong
-              ><span>(1.300+)</span> <span class="pallino"></span
-              ><span>15-35 min</span>
+              <span class="stella" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="m12.288 14.449-4.183-2.197a.219.219 0 0 0-.21 0L3.713 14.45 4.5 9.794a.254.254 0 0 0 0-.193L1.07 6.302l4.673-.682a.228.228 0 0 0 .166-.114L8 1.271l2.091 4.235a.227.227 0 0 0 .167.114l4.672.682-3.386 3.3a.254.254 0 0 0-.061.192l.805 4.655Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="voto">4,1</span>
+              <span class="pallino"></span>
+              <span class="tempo">
+                <span class="icona-orologio" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                      d="M8 14.781A6.782 6.782 0 1 1 14.781 8 6.79 6.79 0 0 1 8 14.781Zm0-12.25A5.469 5.469 0 1 0 8 13.47 5.469 5.469 0 0 0 8 2.53Z"
+                    ></path>
+                    <path
+                      d="m10.284 10.31-2.94-1.759V4.5h1.312v3.308l2.31 1.382-.682 1.12Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>22-36 min</span>
+              </span>
             </div>
             <div class="consegna">
-              <span>🚴</span><span>0,49€ Consegna</span>
+              <span class="icona-bici" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="M12.139 7.405 11 4.158a.218.218 0 0 1 0-.157.246.246 0 0 1 .158-.123l1.216-.446v-1.4l-1.627.613a1.514 1.514 0 0 0-.998 1.933l.359 1.015H9.75a2.433 2.433 0 0 0-1.925.963l-1.207 1.61-1.06-2.135h.692V4.718h-3.5v1.313H4.09l.726 1.461a2.87 2.87 0 0 0-.735-.105 2.826 2.826 0 1 0 2.826 2.818v-.201l1.97-2.66a1.111 1.111 0 0 1 .874-.438h.831l.254.717a2.844 2.844 0 1 0 1.313-.218h-.01Zm-8.059 4.314a1.514 1.514 0 1 1 1.514-1.514 1.505 1.505 0 0 1-1.514 1.514Zm7.875 0a1.514 1.514 0 1 1 1.401-.934 1.505 1.505 0 0 1-1.4.934Z"
+                  ></path>
+                </svg>
+              </span>
+              <span>€2,49 Consegna</span>
             </div>
           </div>
         </article>
+
         <article class="carta-ristorante">
           <div class="vetrina">
             <img
-              src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1200&auto=format&fit=crop"
+              src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_thumb,w_721,h_320/f_auto/q_auto/dpr_2.0/d_it:cuisines:pollo-7.jpg/v1/it/restaurants/262227"
+              alt="Copertina ristorante"
             />
             <div class="logo-ristorante">
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/5/59/McDonald%27s_logo.svg"
+                src="https://d2egcvq7li5bpq.cloudfront.net/it/images/restaurants/262227.gif"
+                alt="Logo ristorante"
               />
             </div>
           </div>
           <div class="corpo">
-            <h3 class="titolo">McDonald's - Piazza Garibaldi</h3>
+            <h3 class="titolo">KFC - Stazione Centrale</h3>
             <div class="meta">
-              <span class="stella">★</span><strong>4,1</strong
-              ><span>(1.300+)</span> <span class="pallino"></span
-              ><span>15-35 min</span>
+              <span class="stella" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="m12.288 14.449-4.183-2.197a.219.219 0 0 0-.21 0L3.713 14.45 4.5 9.794a.254.254 0 0 0 0-.193L1.07 6.302l4.673-.682a.228.228 0 0 0 .166-.114L8 1.271l2.091 4.235a.227.227 0 0 0 .167.114l4.672.682-3.386 3.3a.254.254 0 0 0-.061.192l.805 4.655Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="voto">3,6</span>
+              <span class="pallino"></span>
+              <span class="tempo">
+                <span class="icona-orologio" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                      d="M8 14.781A6.782 6.782 0 1 1 14.781 8 6.79 6.79 0 0 1 8 14.781Zm0-12.25A5.469 5.469 0 1 0 8 13.47 5.469 5.469 0 0 0 8 2.53Z"
+                    ></path>
+                    <path
+                      d="m10.284 10.31-2.94-1.759V4.5h1.312v3.308l2.31 1.382-.682 1.12Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>25-40 min</span>
+              </span>
             </div>
-            <div class="consegna">
-              <span>🚴</span><span>0,49€ Consegna</span>
+            <div class="consegna" id="consegna-gratis">
+              <span class="icona-bici" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="M12.139 7.405 11 4.158a.218.218 0 0 1 0-.157.246.246 0 0 1 .158-.123l1.216-.446v-1.4l-1.627.613a1.514 1.514 0 0 0-.998 1.933l.359 1.015H9.75a2.433 2.433 0 0 0-1.925.963l-1.207 1.61-1.06-2.135h.692V4.718h-3.5v1.313H4.09l.726 1.461a2.87 2.87 0 0 0-.735-.105 2.826 2.826 0 1 0 2.826 2.818v-.201l1.97-2.66a1.111 1.111 0 0 1 .874-.438h.831l.254.717a2.844 2.844 0 1 0 1.313-.218h-.01Zm-8.059 4.314a1.514 1.514 0 1 1 1.514-1.514 1.505 1.505 0 0 1-1.514 1.514Zm7.875 0a1.514 1.514 0 1 1 1.401-.934 1.505 1.505 0 0 1-1.4.934Z"
+                  ></path>
+                </svg>
+              </span>
+              <span>Consegna gratuita</span>
             </div>
           </div>
         </article>
+
         <article class="carta-ristorante">
           <div class="vetrina">
             <img
-              src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1200&auto=format&fit=crop"
+              src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_thumb,w_721,h_320/f_auto/q_auto/dpr_2.0/d_it:cuisines:hamburger-8.jpg/v1/it/restaurants/264838"
+              alt="Copertina ristorante"
             />
             <div class="logo-ristorante">
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/5/59/McDonald%27s_logo.svg"
+                src="https://d2egcvq7li5bpq.cloudfront.net/it/images/restaurants/264838.gif"
+                alt="Logo ristorante"
               />
             </div>
           </div>
           <div class="corpo">
-            <h3 class="titolo">McDonald's - Piazza Garibaldi</h3>
+            <h3 class="titolo">Bun Burgers - Dell'Orso</h3>
             <div class="meta">
-              <span class="stella">★</span><strong>4,1</strong
-              ><span>(1.300+)</span> <span class="pallino"></span
-              ><span>15-35 min</span>
+              <span class="stella" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="m12.288 14.449-4.183-2.197a.219.219 0 0 0-.21 0L3.713 14.45 4.5 9.794a.254.254 0 0 0 0-.193L1.07 6.302l4.673-.682a.228.228 0 0 0 .166-.114L8 1.271l2.091 4.235a.227.227 0 0 0 .167.114l4.672.682-3.386 3.3a.254.254 0 0 0-.061.192l.805 4.655Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="voto">4,4</span>
+              <span class="pallino"></span>
+              <span class="tempo">
+                <span class="icona-orologio" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                      d="M8 14.781A6.782 6.782 0 1 1 14.781 8 6.79 6.79 0 0 1 8 14.781Zm0-12.25A5.469 5.469 0 1 0 8 13.47 5.469 5.469 0 0 0 8 2.53Z"
+                    ></path>
+                    <path
+                      d="m10.284 10.31-2.94-1.759V4.5h1.312v3.308l2.31 1.382-.682 1.12Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>18-30 min</span>
+              </span>
             </div>
             <div class="consegna">
-              <span>🚴</span><span>0,49€ Consegna</span>
+              <span class="icona-bici" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="M12.139 7.405 11 4.158a.218.218 0 0 1 0-.157.246.246 0 0 1 .158-.123l1.216-.446v-1.4l-1.627.613a1.514 1.514 0 0 0-.998 1.933l.359 1.015H9.75a2.433 2.433 0 0 0-1.925.963l-1.207 1.61-1.06-2.135h.692V4.718h-3.5v1.313H4.09l.726 1.461a2.87 2.87 0 0 0-.735-.105 2.826 2.826 0 1 0 2.826 2.818v-.201l1.97-2.66a1.111 1.111 0 0 1 .874-.438h.831l.254.717a2.844 2.844 0 1 0 1.313-.218h-.01Zm-8.059 4.314a1.514 1.514 0 1 1 1.514-1.514 1.505 1.505 0 0 1-1.514 1.514Zm7.875 0a1.514 1.514 0 1 1 1.401-.934 1.505 1.505 0 0 1-1.4.934Z"
+                  ></path>
+                </svg>
+              </span>
+              <span>€1,49 Consegna</span>
             </div>
           </div>
         </article>
+
+        <!--  -->
         <article class="carta-ristorante">
           <div class="vetrina">
             <img
-              src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1200&auto=format&fit=crop"
+              src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_thumb,w_721,h_320/f_auto/q_auto/dpr_2.0/d_it:cuisines:hamburger-8.jpg/v1/it/restaurants/203068"
+              alt="Copertina ristorante"
             />
             <div class="logo-ristorante">
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/5/59/McDonald%27s_logo.svg"
+                src="https://d2egcvq7li5bpq.cloudfront.net/it/images/restaurants/203068.gif"
+                alt="Logo ristorante"
               />
             </div>
           </div>
           <div class="corpo">
-            <h3 class="titolo">McDonald's - Piazza Garibaldi</h3>
+            <h3 class="titolo">Flower Burger - Vittorio Veneto</h3>
             <div class="meta">
-              <span class="stella">★</span><strong>4,1</strong
-              ><span>(1.300+)</span> <span class="pallino"></span
-              ><span>15-35 min</span>
+              <span class="stella" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="m12.288 14.449-4.183-2.197a.219.219 0 0 0-.21 0L3.713 14.45 4.5 9.794a.254.254 0 0 0 0-.193L1.07 6.302l4.673-.682a.228.228 0 0 0 .166-.114L8 1.271l2.091 4.235a.227.227 0 0 0 .167.114l4.672.682-3.386 3.3a.254.254 0 0 0-.061.192l.805 4.655Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="voto">4,2</span>
+              <span class="pallino"></span>
+              <span class="tempo">
+                <span class="icona-orologio" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                      d="M8 14.781A6.782 6.782 0 1 1 14.781 8 6.79 6.79 0 0 1 8 14.781Zm0-12.25A5.469 5.469 0 1 0 8 13.47 5.469 5.469 0 0 0 8 2.53Z"
+                    ></path>
+                    <path
+                      d="m10.284 10.31-2.94-1.759V4.5h1.312v3.308l2.31 1.382-.682 1.12Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>14-26 min</span>
+              </span>
             </div>
             <div class="consegna">
-              <span>🚴</span><span>0,49€ Consegna</span>
+              <span class="icona-bici" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="M12.139 7.405 11 4.158a.218.218 0 0 1 0-.157.246.246 0 0 1 .158-.123l1.216-.446v-1.4l-1.627.613a1.514 1.514 0 0 0-.998 1.933l.359 1.015H9.75a2.433 2.433 0 0 0-1.925.963l-1.207 1.61-1.06-2.135h.692V4.718h-3.5v1.313H4.09l.726 1.461a2.87 2.87 0 0 0-.735-.105 2.826 2.826 0 1 0 2.826 2.818v-.201l1.97-2.66a1.111 1.111 0 0 1 .874-.438h.831l.254.717a2.844 2.844 0 1 0 1.313-.218h-.01Zm-8.059 4.314a1.514 1.514 0 1 1 1.514-1.514 1.505 1.505 0 0 1-1.514 1.514Zm7.875 0a1.514 1.514 0 1 1 1.401-.934 1.505 1.505 0 0 1-1.4.934Z"
+                  ></path>
+                </svg>
+              </span>
+              <span>€0,49 Consegna</span>
             </div>
           </div>
         </article>
-        <!--  inserire più volte -->
+
+        <article class="carta-ristorante">
+          <div class="vetrina">
+            <img
+              src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_thumb,w_721,h_320/f_auto/q_auto/dpr_2.0/d_it:cuisines:poke-9.jpg/v1/it/restaurants/284509"
+              alt="Copertina ristorante"
+            />
+            <div class="logo-ristorante">
+              <img
+                src="https://d2egcvq7li5bpq.cloudfront.net/it/images/restaurants/284509.gif"
+                alt="Logo ristorante"
+              />
+            </div>
+          </div>
+          <div class="corpo">
+            <h3 class="titolo">Pokéria by NIMA - 22 Marzo</h3>
+            <div class="meta">
+              <span class="stella" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="m12.288 14.449-4.183-2.197a.219.219 0 0 0-.21 0L3.713 14.45 4.5 9.794a.254.254 0 0 0 0-.193L1.07 6.302l4.673-.682a.228.228 0 0 0 .166-.114L8 1.271l2.091 4.235a.227.227 0 0 0 .167.114l4.672.682-3.386 3.3a.254.254 0 0 0-.061.192l.805 4.655Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="voto">4,5</span>
+              <span class="pallino"></span>
+              <span class="tempo">
+                <span class="icona-orologio" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                      d="M8 14.781A6.782 6.782 0 1 1 14.781 8 6.79 6.79 0 0 1 8 14.781Zm0-12.25A5.469 5.469 0 1 0 8 13.47 5.469 5.469 0 0 0 8 2.53Z"
+                    ></path>
+                    <path
+                      d="m10.284 10.31-2.94-1.759V4.5h1.312v3.308l2.31 1.382-.682 1.12Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>16-28 min</span>
+              </span>
+            </div>
+            <div class="consegna">
+              <span class="icona-bici" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="M12.139 7.405 11 4.158a.218.218 0 0 1 0-.157.246.246 0 0 1 .158-.123l1.216-.446v-1.4l-1.627.613a1.514 1.514 0 0 0-.998 1.933l.359 1.015H9.75a2.433 2.433 0 0 0-1.925.963l-1.207 1.61-1.06-2.135h.692V4.718h-3.5v1.313H4.09l.726 1.461a2.87 2.87 0 0 0-.735-.105 2.826 2.826 0 1 0 2.826 2.818v-.201l1.97-2.66a1.111 1.111 0 0 1 .874-.438h.831l.254.717a2.844 2.844 0 1 0 1.313-.218h-.01Zm-8.059 4.314a1.514 1.514 0 1 1 1.514-1.514 1.505 1.505 0 0 1-1.514 1.514Zm7.875 0a1.514 1.514 0 1 1 1.401-.934 1.505 1.505 0 0 1-1.4.934Z"
+                  ></path>
+                </svg>
+              </span>
+              <span>€2,99 Consegna</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="carta-ristorante">
+          <div class="vetrina">
+            <img
+              src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_thumb,w_721,h_320/f_auto/q_auto/dpr_2.0/d_it:cuisines:panini-2.jpg/v1/it/restaurants/244582"
+              alt="Copertina ristorante"
+            />
+            <div class="logo-ristorante">
+              <img
+                src="https://d2egcvq7li5bpq.cloudfront.net/it/images/restaurants/244582.gif"
+                alt="Logo ristorante"
+              />
+            </div>
+          </div>
+          <div class="corpo">
+            <h3 class="titolo">Trapizzino - Corso Lodi</h3>
+            <div class="meta">
+              <span class="stella" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="m12.288 14.449-4.183-2.197a.219.219 0 0 0-.21 0L3.713 14.45 4.5 9.794a.254.254 0 0 0 0-.193L1.07 6.302l4.673-.682a.228.228 0 0 0 .166-.114L8 1.271l2.091 4.235a.227.227 0 0 0 .167.114l4.672.682-3.386 3.3a.254.254 0 0 0-.061.192l.805 4.655Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="voto">4,0</span>
+              <span class="pallino"></span>
+              <span class="tempo">
+                <span class="icona-orologio" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                      d="M8 14.781A6.782 6.782 0 1 1 14.781 8 6.79 6.79 0 0 1 8 14.781Zm0-12.25A5.469 5.469 0 1 0 8 13.47 5.469 5.469 0 0 0 8 2.53Z"
+                    ></path>
+                    <path
+                      d="m10.284 10.31-2.94-1.759V4.5h1.312v3.308l2.31 1.382-.682 1.12Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>10-20 min</span>
+              </span>
+            </div>
+            <div class="consegna" id="consegna-gratis">
+              <span class="icona-bici" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="M12.139 7.405 11 4.158a.218.218 0 0 1 0-.157.246.246 0 0 1 .158-.123l1.216-.446v-1.4l-1.627.613a1.514 1.514 0 0 0-.998 1.933l.359 1.015H9.75a2.433 2.433 0 0 0-1.925.963l-1.207 1.61-1.06-2.135h.692V4.718h-3.5v1.313H4.09l.726 1.461a2.87 2.87 0 0 0-.735-.105 2.826 2.826 0 1 0 2.826 2.818v-.201l1.97-2.66a1.111 1.111 0 0 1 .874-.438h.831l.254.717a2.844 2.844 0 1 0 1.313-.218h-.01Zm-8.059 4.314a1.514 1.514 0 1 1 1.514-1.514 1.505 1.505 0 0 1-1.514 1.514Zm7.875 0a1.514 1.514 0 1 1 1.401-.934 1.505 1.505 0 0 1-1.4.934Z"
+                  ></path>
+                </svg>
+              </span>
+              <span>Consegna gratuita</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- -->
+        <article class="carta-ristorante">
+          <div class="vetrina">
+            <img
+              src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_thumb,w_721,h_320/f_auto/q_auto/dpr_2.0/d_it:cuisines:fiori-1.jpg/v1/it/restaurants/283681"
+              alt="Copertina ristorante"
+            />
+            <div class="logo-ristorante">
+              <img
+                src="https://d2egcvq7li5bpq.cloudfront.net/it/images/restaurants/283681.gif"
+                alt="Logo ristorante"
+              />
+            </div>
+          </div>
+          <div class="corpo">
+            <h3 class="titolo">M & O Fiori e Piante</h3>
+            <div class="meta">
+              <span class="stella" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="m12.288 14.449-4.183-2.197a.219.219 0 0 0-.21 0L3.713 14.45 4.5 9.794a.254.254 0 0 0 0-.193L1.07 6.302l4.673-.682a.228.228 0 0 0 .166-.114L8 1.271l2.091 4.235a.227.227 0 0 0 .167.114l4.672.682-3.386 3.3a.254.254 0 0 0-.061.192l.805 4.655Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="voto">3,8</span>
+              <span class="pallino"></span>
+              <span class="tempo">
+                <span class="icona-orologio" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                      d="M8 14.781A6.782 6.782 0 1 1 14.781 8 6.79 6.79 0 0 1 8 14.781Zm0-12.25A5.469 5.469 0 1 0 8 13.47 5.469 5.469 0 0 0 8 2.53Z"
+                    ></path>
+                    <path
+                      d="m10.284 10.31-2.94-1.759V4.5h1.312v3.308l2.31 1.382-.682 1.12Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>30-45 min</span>
+              </span>
+            </div>
+            <div class="consegna">
+              <span class="icona-bici" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="M12.139 7.405 11 4.158a.218.218 0 0 1 0-.157.246.246 0 0 1 .158-.123l1.216-.446v-1.4l-1.627.613a1.514 1.514 0 0 0-.998 1.933l.359 1.015H9.75a2.433 2.433 0 0 0-1.925.963l-1.207 1.61-1.06-2.135h.692V4.718h-3.5v1.313H4.09l.726 1.461a2.87 2.87 0 0 0-.735-.105 2.826 2.826 0 1 0 2.826 2.818v-.201l1.97-2.66a1.111 1.111 0 0 1 .874-.438h.831l.254.717a2.844 2.844 0 1 0 1.313-.218h-.01Zm-8.059 4.314a1.514 1.514 0 1 1 1.514-1.514 1.505 1.505 0 0 1-1.514 1.514Zm7.875 0a1.514 1.514 0 1 1 1.401-.934 1.505 1.505 0 0 1-1.4.934Z"
+                  ></path>
+                </svg>
+              </span>
+              <span>€3,99 Consegna</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== GRIGLIA 2 ========== -->
+    <section class="sezione-carte" id="grid-2">
+      <div class="testata-sezione">
+        <h2 class="titolo-sezione">Le offerte di oggi 🔥</h2>
+        <a class="azione-sezione" href="#">Vedi tutto</a>
+      </div>
+
+      <div class="corridoio-carte">
+        <!--  GRIGLIA 2 -->
+        <!------------------------------------>
+        <article class="carta-ristorante">
+          <div class="vetrina">
+            <img
+              src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_thumb,w_721,h_320/f_auto/q_auto/dpr_2.0/d_it:cuisines:pizza-8.jpg/v1/it/restaurants/288748"
+              alt="Copertina ristorante"
+            />
+
+            <div class="logo-ristorante">
+              <img
+                src="https://d2egcvq7li5bpq.cloudfront.net/it/images/restaurants/288748.gif"
+                alt="Logo ristorante"
+              />
+            </div>
+          </div>
+
+          <div class="corpo">
+            <h3 class="titolo">Antica Pizzeria Vesi</h3>
+
+            <div class="meta">
+              <span class="stella" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="m12.288 14.449-4.183-2.197a.219.219 0 0 0-.21 0L3.713 14.45 4.5 9.794a.254.254 0 0 0 0-.193L1.07 6.302l4.673-.682a.228.228 0 0 0 .166-.114L8 1.271l2.091 4.235a.227.227 0 0 0 .167.114l4.672.682-3.386 3.3a.254.254 0 0 0-.061.192l.805 4.655Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="pallino"></span>
+
+              <span class="tempo">
+                <span class="icona-orologio" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                      d="M8 14.781A6.782 6.782 0 1 1 14.781 8 6.79 6.79 0 0 1 8 14.781Zm0-12.25A5.469 5.469 0 1 0 8 13.47 5.469 5.469 0 0 0 8 2.53Z"
+                    ></path>
+                    <path
+                      d="m10.284 10.31-2.94-1.759V4.5h1.312v3.308l2.31 1.382-.682 1.12Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>15-35 min</span>
+              </span>
+            </div>
+
+            <div class="consegna" id="consegna-gratis">
+              <span class="icona-bici" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="M12.139 7.405 11 4.158a.218.218 0 0 1 0-.157.246.246 0 0 1 .158-.123l1.216-.446v-1.4l-1.627.613a1.514 1.514 0 0 0-.998 1.933l.359 1.015H9.75a2.433 2.433 0 0 0-1.925.963l-1.207 1.61-1.06-2.135h.692V4.718h-3.5v1.313H4.09l.726 1.461a2.87 2.87 0 0 0-.735-.105 2.826 2.826 0 1 0 2.826 2.818v-.201l1.97-2.66a1.111 1.111 0 0 1 .874-.438h.831l.254.717a2.844 2.844 0 1 0 1.313-.218h-.01Zm-8.059 4.314a1.514 1.514 0 1 1 1.514-1.514 1.505 1.505 0 0 1-1.514 1.514Zm7.875 0a1.514 1.514 0 1 1 1.401-.934 1.505 1.505 0 0 1-1.4.934Z"
+                  ></path>
+                </svg>
+              </span>
+              <span>Consegna gratuita</span>
+            </div>
+          </div>
+        </article>
+        <!------------------------------------>
+        <article class="carta-ristorante">
+          <div class="vetrina">
+            <img
+              src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_thumb,w_721,h_320/f_auto/q_auto/dpr_2.0/d_it:cuisines:spesa-6.jpg/v1/it/restaurants/277776"
+              alt="Copertina ristorante"
+            />
+
+            <div class="logo-ristorante">
+              <img
+                src="https://d2egcvq7li5bpq.cloudfront.net/it/images/restaurants/277776.gif"
+                alt="Logo ristorante"
+              />
+            </div>
+          </div>
+
+          <div class="corpo">
+            <h3 class="titolo">Despar - Napoli</h3>
+
+            <div class="meta">
+              <span class="stella" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="m12.288 14.449-4.183-2.197a.219.219 0 0 0-.21 0L3.713 14.45 4.5 9.794a.254.254 0 0 0 0-.193L1.07 6.302l4.673-.682a.228.228 0 0 0 .166-.114L8 1.271l2.091 4.235a.227.227 0 0 0 .167.114l4.672.682-3.386 3.3a.254.254 0 0 0-.061.192l.805 4.655Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="pallino"></span>
+
+              <span class="tempo">
+                <span class="icona-orologio" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                      d="M8 14.781A6.782 6.782 0 1 1 14.781 8 6.79 6.79 0 0 1 8 14.781Zm0-12.25A5.469 5.469 0 1 0 8 13.47 5.469 5.469 0 0 0 8 2.53Z"
+                    ></path>
+                    <path
+                      d="m10.284 10.31-2.94-1.759V4.5h1.312v3.308l2.31 1.382-.682 1.12Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>15-35 min</span>
+              </span>
+            </div>
+
+            <div class="consegna">
+              <span class="icona-bici" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="M12.139 7.405 11 4.158a.218.218 0 0 1 0-.157.246.246 0 0 1 .158-.123l1.216-.446v-1.4l-1.627.613a1.514 1.514 0 0 0-.998 1.933l.359 1.015H9.75a2.433 2.433 0 0 0-1.925.963l-1.207 1.61-1.06-2.135h.692V4.718h-3.5v1.313H4.09l.726 1.461a2.87 2.87 0 0 0-.735-.105 2.826 2.826 0 1 0 2.826 2.818v-.201l1.97-2.66a1.111 1.111 0 0 1 .874-.438h.831l.254.717a2.844 2.844 0 1 0 1.313-.218h-.01Zm-8.059 4.314a1.514 1.514 0 1 1 1.514-1.514 1.505 1.505 0 0 1-1.514 1.514Zm7.875 0a1.514 1.514 0 1 1 1.401-.934 1.505 1.505 0 0 1-1.4.934Z"
+                  ></path>
+                </svg>
+              </span>
+              <span>0,49€ Consegna</span>
+            </div>
+          </div>
+        </article>
+        <!------------------------------------>
+        <article class="carta-ristorante">
+          <div class="vetrina">
+            <img
+              src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_thumb,w_937,h_400/f_auto/q_auto/dpr_2.0/d_it:cuisines:spesa-8.jpg/v1/it/restaurants/279708"
+              alt="Copertina ristorante"
+            />
+
+            <div class="logo-ristorante">
+              <img
+                src="https://d2egcvq7li5bpq.cloudfront.net/it/images/restaurants/279708.gif"
+                alt="Logo ristorante"
+              />
+            </div>
+          </div>
+
+          <div class="corpo">
+            <h3 class="titolo">Supermercato Todis - Napoli</h3>
+
+            <div class="meta">
+              <span class="stella" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="m12.288 14.449-4.183-2.197a.219.219 0 0 0-.21 0L3.713 14.45 4.5 9.794a.254.254 0 0 0 0-.193L1.07 6.302l4.673-.682a.228.228 0 0 0 .166-.114L8 1.271l2.091 4.235a.227.227 0 0 0 .167.114l4.672.682-3.386 3.3a.254.254 0 0 0-.061.192l.805 4.655Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="pallino"></span>
+
+              <span class="tempo">
+                <span class="icona-orologio" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                      d="M8 14.781A6.782 6.782 0 1 1 14.781 8 6.79 6.79 0 0 1 8 14.781Zm0-12.25A5.469 5.469 0 1 0 8 13.47 5.469 5.469 0 0 0 8 2.53Z"
+                    ></path>
+                    <path
+                      d="m10.284 10.31-2.94-1.759V4.5h1.312v3.308l2.31 1.382-.682 1.12Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>15-35 min</span>
+              </span>
+            </div>
+
+            <div class="consegna">
+              <span class="icona-bici" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="M12.139 7.405 11 4.158a.218.218 0 0 1 0-.157.246.246 0 0 1 .158-.123l1.216-.446v-1.4l-1.627.613a1.514 1.514 0 0 0-.998 1.933l.359 1.015H9.75a2.433 2.433 0 0 0-1.925.963l-1.207 1.61-1.06-2.135h.692V4.718h-3.5v1.313H4.09l.726 1.461a2.87 2.87 0 0 0-.735-.105 2.826 2.826 0 1 0 2.826 2.818v-.201l1.97-2.66a1.111 1.111 0 0 1 .874-.438h.831l.254.717a2.844 2.844 0 1 0 1.313-.218h-.01Zm-8.059 4.314a1.514 1.514 0 1 1 1.514-1.514 1.505 1.505 0 0 1-1.514 1.514Zm7.875 0a1.514 1.514 0 1 1 1.401-.934 1.505 1.505 0 0 1-1.4.934Z"
+                  ></path>
+                </svg>
+              </span>
+              <span>0,49€ Consegna</span>
+            </div>
+          </div>
+        </article>
+        <!------------------------------------>
+        <article class="carta-ristorante">
+          <div class="vetrina">
+            <img
+              src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_thumb,w_937,h_400/f_auto/q_auto/dpr_2.0/d_it:cuisines:indiano-7.jpg/v1/it/restaurants/276377"
+              alt="Copertina ristorante"
+            />
+
+            <div class="logo-ristorante">
+              <img
+                src="https://d2egcvq7li5bpq.cloudfront.net/it/images/restaurants/276377.gif"
+                alt="Logo ristorante"
+              />
+            </div>
+          </div>
+
+          <div class="corpo">
+            <h3 class="titolo">Chicken Hut - Indian Taste</h3>
+
+            <div class="meta">
+              <span class="stella" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="m12.288 14.449-4.183-2.197a.219.219 0 0 0-.21 0L3.713 14.45 4.5 9.794a.254.254 0 0 0 0-.193L1.07 6.302l4.673-.682a.228.228 0 0 0 .166-.114L8 1.271l2.091 4.235a.227.227 0 0 0 .167.114l4.672.682-3.386 3.3a.254.254 0 0 0-.061.192l.805 4.655Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="pallino"></span>
+
+              <span class="tempo">
+                <span class="icona-orologio" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                      d="M8 14.781A6.782 6.782 0 1 1 14.781 8 6.79 6.79 0 0 1 8 14.781Zm0-12.25A5.469 5.469 0 1 0 8 13.47 5.469 5.469 0 0 0 8 2.53Z"
+                    ></path>
+                    <path
+                      d="m10.284 10.31-2.94-1.759V4.5h1.312v3.308l2.31 1.382-.682 1.12Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>15-35 min</span>
+              </span>
+            </div>
+
+            <div class="consegna" id="consegna-gratis">
+              <span class="icona-bici" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="M12.139 7.405 11 4.158a.218.218 0 0 1 0-.157.246.246 0 0 1 .158-.123l1.216-.446v-1.4l-1.627.613a1.514 1.514 0 0 0-.998 1.933l.359 1.015H9.75a2.433 2.433 0 0 0-1.925.963l-1.207 1.61-1.06-2.135h.692V4.718h-3.5v1.313H4.09l.726 1.461a2.87 2.87 0 0 0-.735-.105 2.826 2.826 0 1 0 2.826 2.818v-.201l1.97-2.66a1.111 1.111 0 0 1 .874-.438h.831l.254.717a2.844 2.844 0 1 0 1.313-.218h-.01Zm-8.059 4.314a1.514 1.514 0 1 1 1.514-1.514 1.505 1.505 0 0 1-1.514 1.514Zm7.875 0a1.514 1.514 0 1 1 1.401-.934 1.505 1.505 0 0 1-1.4.934Z"
+                  ></path>
+                </svg>
+              </span>
+              <span>Consegna gratuita</span>
+            </div>
+          </div>
+        </article>
+        <!------------------------------------>
+        <article class="carta-ristorante">
+          <div class="vetrina">
+            <img
+              src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_thumb,w_937,h_400/f_auto/q_auto/dpr_2.0/d_it:cuisines:kebab-5.jpg/v1/it/restaurants/281295"
+              alt="Copertina ristorante"
+            />
+
+            <div class="logo-ristorante">
+              <img
+                src="https://d2egcvq7li5bpq.cloudfront.net/it/images/restaurants/281295.gif"
+                alt="Logo ristorante"
+              />
+            </div>
+          </div>
+
+          <div class="corpo">
+            <h3 class="titolo">The Royal Corner</h3>
+
+            <div class="meta">
+              <span class="stella" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="m12.288 14.449-4.183-2.197a.219.219 0 0 0-.21 0L3.713 14.45 4.5 9.794a.254.254 0 0 0 0-.193L1.07 6.302l4.673-.682a.228.228 0 0 0 .166-.114L8 1.271l2.091 4.235a.227.227 0 0 0 .167.114l4.672.682-3.386 3.3a.254.254 0 0 0-.061.192l.805 4.655Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="pallino"></span>
+
+              <span class="tempo">
+                <span class="icona-orologio" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                      d="M8 14.781A6.782 6.782 0 1 1 14.781 8 6.79 6.79 0 0 1 8 14.781Zm0-12.25A5.469 5.469 0 1 0 8 13.47 5.469 5.469 0 0 0 8 2.53Z"
+                    ></path>
+                    <path
+                      d="m10.284 10.31-2.94-1.759V4.5h1.312v3.308l2.31 1.382-.682 1.12Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>15-35 min</span>
+              </span>
+            </div>
+
+            <div class="consegna">
+              <span class="icona-bici" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="M12.139 7.405 11 4.158a.218.218 0 0 1 0-.157.246.246 0 0 1 .158-.123l1.216-.446v-1.4l-1.627.613a1.514 1.514 0 0 0-.998 1.933l.359 1.015H9.75a2.433 2.433 0 0 0-1.925.963l-1.207 1.61-1.06-2.135h.692V4.718h-3.5v1.313H4.09l.726 1.461a2.87 2.87 0 0 0-.735-.105 2.826 2.826 0 1 0 2.826 2.818v-.201l1.97-2.66a1.111 1.111 0 0 1 .874-.438h.831l.254.717a2.844 2.844 0 1 0 1.313-.218h-.01Zm-8.059 4.314a1.514 1.514 0 1 1 1.514-1.514 1.505 1.505 0 0 1-1.514 1.514Zm7.875 0a1.514 1.514 0 1 1 1.401-.934 1.505 1.505 0 0 1-1.4.934Z"
+                  ></path>
+                </svg>
+              </span>
+              <span>0,49€ Consegna</span>
+            </div>
+          </div>
+        </article>
+        <!------------------------------------>
+        <article class="carta-ristorante">
+          <div class="vetrina">
+            <img
+              src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_thumb,w_937,h_400/f_auto/q_auto/dpr_2.0/d_it:cuisines:sushi-1.jpg/v1/it/restaurants/252831"
+              alt="Copertina ristorante"
+            />
+
+            <div class="logo-ristorante">
+              <img
+                src="https://d2egcvq7li5bpq.cloudfront.net/it/images/restaurants/252831.gif"
+                alt="Logo ristorante"
+              />
+            </div>
+          </div>
+
+          <div class="corpo">
+            <h3 class="titolo">Mi Zai Sushi Tribunali</h3>
+
+            <div class="meta">
+              <span class="stella" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="m12.288 14.449-4.183-2.197a.219.219 0 0 0-.21 0L3.713 14.45 4.5 9.794a.254.254 0 0 0 0-.193L1.07 6.302l4.673-.682a.228.228 0 0 0 .166-.114L8 1.271l2.091 4.235a.227.227 0 0 0 .167.114l4.672.682-3.386 3.3a.254.254 0 0 0-.061.192l.805 4.655Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="pallino"></span>
+
+              <span class="tempo">
+                <span class="icona-orologio" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                      d="M8 14.781A6.782 6.782 0 1 1 14.781 8 6.79 6.79 0 0 1 8 14.781Zm0-12.25A5.469 5.469 0 1 0 8 13.47 5.469 5.469 0 0 0 8 2.53Z"
+                    ></path>
+                    <path
+                      d="m10.284 10.31-2.94-1.759V4.5h1.312v3.308l2.31 1.382-.682 1.12Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>15-35 min</span>
+              </span>
+            </div>
+
+            <div class="consegna">
+              <span class="icona-bici" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="M12.139 7.405 11 4.158a.218.218 0 0 1 0-.157.246.246 0 0 1 .158-.123l1.216-.446v-1.4l-1.627.613a1.514 1.514 0 0 0-.998 1.933l.359 1.015H9.75a2.433 2.433 0 0 0-1.925.963l-1.207 1.61-1.06-2.135h.692V4.718h-3.5v1.313H4.09l.726 1.461a2.87 2.87 0 0 0-.735-.105 2.826 2.826 0 1 0 2.826 2.818v-.201l1.97-2.66a1.111 1.111 0 0 1 .874-.438h.831l.254.717a2.844 2.844 0 1 0 1.313-.218h-.01Zm-8.059 4.314a1.514 1.514 0 1 1 1.514-1.514 1.505 1.505 0 0 1-1.514 1.514Zm7.875 0a1.514 1.514 0 1 1 1.401-.934 1.505 1.505 0 0 1-1.4.934Z"
+                  ></path>
+                </svg>
+              </span>
+              <span>0,49€ Consegna</span>
+            </div>
+          </div>
+        </article>
+        <!------------------------------------>
+        <article class="carta-ristorante">
+          <div class="vetrina">
+            <img
+              src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_thumb,w_937,h_400/f_auto/q_auto/dpr_2.0/d_it:cuisines:pizza-3.jpg/v1/it/restaurants/277383"
+              alt="Copertina ristorante"
+            />
+
+            <div class="logo-ristorante">
+              <img
+                src="https://d2egcvq7li5bpq.cloudfront.net/it/images/restaurants/277383.gif"
+                alt="Logo ristorante"
+              />
+            </div>
+          </div>
+
+          <div class="corpo">
+            <h3 class="titolo">Pizzeria Napoli Centrale</h3>
+
+            <div class="meta">
+              <span class="stella" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="m12.288 14.449-4.183-2.197a.219.219 0 0 0-.21 0L3.713 14.45 4.5 9.794a.254.254 0 0 0 0-.193L1.07 6.302l4.673-.682a.228.228 0 0 0 .166-.114L8 1.271l2.091 4.235a.227.227 0 0 0 .167.114l4.672.682-3.386 3.3a.254.254 0 0 0-.061.192l.805 4.655Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="pallino"></span>
+
+              <span class="tempo">
+                <span class="icona-orologio" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                      d="M8 14.781A6.782 6.782 0 1 1 14.781 8 6.79 6.79 0 0 1 8 14.781Zm0-12.25A5.469 5.469 0 1 0 8 13.47 5.469 5.469 0 0 0 8 2.53Z"
+                    ></path>
+                    <path
+                      d="m10.284 10.31-2.94-1.759V4.5h1.312v3.308l2.31 1.382-.682 1.12Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>15-35 min</span>
+              </span>
+            </div>
+
+            <div class="consegna">
+              <span class="icona-bici" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="M12.139 7.405 11 4.158a.218.218 0 0 1 0-.157.246.246 0 0 1 .158-.123l1.216-.446v-1.4l-1.627.613a1.514 1.514 0 0 0-.998 1.933l.359 1.015H9.75a2.433 2.433 0 0 0-1.925.963l-1.207 1.61-1.06-2.135h.692V4.718h-3.5v1.313H4.09l.726 1.461a2.87 2.87 0 0 0-.735-.105 2.826 2.826 0 1 0 2.826 2.818v-.201l1.97-2.66a1.111 1.111 0 0 1 .874-.438h.831l.254.717a2.844 2.844 0 1 0 1.313-.218h-.01Zm-8.059 4.314a1.514 1.514 0 1 1 1.514-1.514 1.505 1.505 0 0 1-1.514 1.514Zm7.875 0a1.514 1.514 0 1 1 1.401-.934 1.505 1.505 0 0 1-1.4.934Z"
+                  ></path>
+                </svg>
+              </span>
+              <span>0,49€ Consegna</span>
+            </div>
+          </div>
+        </article>
+        <!------------------------------------>
+        <article class="carta-ristorante">
+          <div class="vetrina">
+            <img
+              src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_thumb,w_937,h_400/f_auto/q_auto/dpr_2.0/d_it:cuisines:pizza-1.jpg/v1/it/restaurants/278501"
+              alt="Copertina ristorante"
+            />
+
+            <div class="logo-ristorante">
+              <img
+                src="https://d2egcvq7li5bpq.cloudfront.net/it/images/restaurants/278501.gif"
+                alt="Logo ristorante"
+              />
+            </div>
+          </div>
+
+          <div class="corpo">
+            <h3 class="titolo">O' Pagnuttiell</h3>
+
+            <div class="meta">
+              <span class="stella" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="m12.288 14.449-4.183-2.197a.219.219 0 0 0-.21 0L3.713 14.45 4.5 9.794a.254.254 0 0 0 0-.193L1.07 6.302l4.673-.682a.228.228 0 0 0 .166-.114L8 1.271l2.091 4.235a.227.227 0 0 0 .167.114l4.672.682-3.386 3.3a.254.254 0 0 0-.061.192l.805 4.655Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="pallino"></span>
+
+              <span class="tempo">
+                <span class="icona-orologio" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                      d="M8 14.781A6.782 6.782 0 1 1 14.781 8 6.79 6.79 0 0 1 8 14.781Zm0-12.25A5.469 5.469 0 1 0 8 13.47 5.469 5.469 0 0 0 8 2.53Z"
+                    ></path>
+                    <path
+                      d="m10.284 10.31-2.94-1.759V4.5h1.312v3.308l2.31 1.382-.682 1.12Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>15-35 min</span>
+              </span>
+            </div>
+
+            <div class="consegna">
+              <span class="icona-bici" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="M12.139 7.405 11 4.158a.218.218 0 0 1 0-.157.246.246 0 0 1 .158-.123l1.216-.446v-1.4l-1.627.613a1.514 1.514 0 0 0-.998 1.933l.359 1.015H9.75a2.433 2.433 0 0 0-1.925.963l-1.207 1.61-1.06-2.135h.692V4.718h-3.5v1.313H4.09l.726 1.461a2.87 2.87 0 0 0-.735-.105 2.826 2.826 0 1 0 2.826 2.818v-.201l1.97-2.66a1.111 1.111 0 0 1 .874-.438h.831l.254.717a2.844 2.844 0 1 0 1.313-.218h-.01Zm-8.059 4.314a1.514 1.514 0 1 1 1.514-1.514 1.505 1.505 0 0 1-1.514 1.514Zm7.875 0a1.514 1.514 0 1 1 1.401-.934 1.505 1.505 0 0 1-1.4.934Z"
+                  ></path>
+                </svg>
+              </span>
+              <span>0,49€ Consegna</span>
+            </div>
+          </div>
+        </article>
+        <!------------------------------------>
+        <article class="carta-ristorante">
+          <div class="vetrina">
+            <img
+              src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_thumb,w_937,h_400/f_auto/q_auto/dpr_2.0/d_it:cuisines:dolci-1.jpg/v1/it/restaurants/279271"
+              alt="Copertina ristorante"
+            />
+
+            <div class="logo-ristorante">
+              <img
+                src="https://d2egcvq7li5bpq.cloudfront.net/it/images/restaurants/279271.gif"
+                alt="Logo ristorante"
+              />
+            </div>
+          </div>
+
+          <div class="corpo">
+            <h3 class="titolo">Pasticceria Tizzano dal 1960 - Unica Sede</h3>
+
+            <div class="meta">
+              <span class="stella" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="m12.288 14.449-4.183-2.197a.219.219 0 0 0-.21 0L3.713 14.45 4.5 9.794a.254.254 0 0 0 0-.193L1.07 6.302l4.673-.682a.228.228 0 0 0 .166-.114L8 1.271l2.091 4.235a.227.227 0 0 0 .167.114l4.672.682-3.386 3.3a.254.254 0 0 0-.061.192l.805 4.655Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="pallino"></span>
+
+              <span class="tempo">
+                <span class="icona-orologio" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                      d="M8 14.781A6.782 6.782 0 1 1 14.781 8 6.79 6.79 0 0 1 8 14.781Zm0-12.25A5.469 5.469 0 1 0 8 13.47 5.469 5.469 0 0 0 8 2.53Z"
+                    ></path>
+                    <path
+                      d="m10.284 10.31-2.94-1.759V4.5h1.312v3.308l2.31 1.382-.682 1.12Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>15-35 min</span>
+              </span>
+            </div>
+
+            <div class="consegna">
+              <span class="icona-bici" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="M12.139 7.405 11 4.158a.218.218 0 0 1 0-.157.246.246 0 0 1 .158-.123l1.216-.446v-1.4l-1.627.613a1.514 1.514 0 0 0-.998 1.933l.359 1.015H9.75a2.433 2.433 0 0 0-1.925.963l-1.207 1.61-1.06-2.135h.692V4.718h-3.5v1.313H4.09l.726 1.461a2.87 2.87 0 0 0-.735-.105 2.826 2.826 0 1 0 2.826 2.818v-.201l1.97-2.66a1.111 1.111 0 0 1 .874-.438h.831l.254.717a2.844 2.844 0 1 0 1.313-.218h-.01Zm-8.059 4.314a1.514 1.514 0 1 1 1.514-1.514 1.505 1.505 0 0 1-1.514 1.514Zm7.875 0a1.514 1.514 0 1 1 1.401-.934 1.505 1.505 0 0 1-1.4.934Z"
+                  ></path>
+                </svg>
+              </span>
+              <span>0,49€ Consegna</span>
+            </div>
+          </div>
+        </article>
+        <!------------------------------------>
+        <article class="carta-ristorante">
+          <div class="vetrina">
+            <img
+              src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_thumb,w_937,h_400/f_auto/q_auto/dpr_2.0/d_it:cuisines:pizza-8.jpg/v1/it/restaurants/287308"
+              alt="Copertina ristorante"
+            />
+
+            <div class="logo-ristorante">
+              <img
+                src="https://d2egcvq7li5bpq.cloudfront.net/it/images/restaurants/287308.gif"
+                alt="Logo ristorante"
+              />
+            </div>
+          </div>
+
+          <div class="corpo">
+            <h3 class="titolo">Pizzeria Al Punto Giusto</h3>
+
+            <div class="meta">
+              <span class="stella" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="m12.288 14.449-4.183-2.197a.219.219 0 0 0-.21 0L3.713 14.45 4.5 9.794a.254.254 0 0 0 0-.193L1.07 6.302l4.673-.682a.228.228 0 0 0 .166-.114L8 1.271l2.091 4.235a.227.227 0 0 0 .167.114l4.672.682-3.386 3.3a.254.254 0 0 0-.061.192l.805 4.655Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="pallino"></span>
+
+              <span class="tempo">
+                <span class="icona-orologio" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                      d="M8 14.781A6.782 6.782 0 1 1 14.781 8 6.79 6.79 0 0 1 8 14.781Zm0-12.25A5.469 5.469 0 1 0 8 13.47 5.469 5.469 0 0 0 8 2.53Z"
+                    ></path>
+                    <path
+                      d="m10.284 10.31-2.94-1.759V4.5h1.312v3.308l2.31 1.382-.682 1.12Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>15-35 min</span>
+              </span>
+            </div>
+
+            <div class="consegna" id="consegna-gratis">
+              <span class="icona-bici" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="M12.139 7.405 11 4.158a.218.218 0 0 1 0-.157.246.246 0 0 1 .158-.123l1.216-.446v-1.4l-1.627.613a1.514 1.514 0 0 0-.998 1.933l.359 1.015H9.75a2.433 2.433 0 0 0-1.925.963l-1.207 1.61-1.06-2.135h.692V4.718h-3.5v1.313H4.09l.726 1.461a2.87 2.87 0 0 0-.735-.105 2.826 2.826 0 1 0 2.826 2.818v-.201l1.97-2.66a1.111 1.111 0 0 1 .874-.438h.831l.254.717a2.844 2.844 0 1 0 1.313-.218h-.01Zm-8.059 4.314a1.514 1.514 0 1 1 1.514-1.514 1.505 1.505 0 0 1-1.514 1.514Zm7.875 0a1.514 1.514 0 1 1 1.401-.934 1.505 1.505 0 0 1-1.4.934Z"
+                  ></path>
+                </svg>
+              </span>
+              <span>Consegna gratuita</span>
+            </div>
+          </div>
+        </article>
+        <!------------------------------------>
+        <article class="carta-ristorante">
+          <div class="vetrina">
+            <img
+              src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_thumb,w_937,h_400/f_auto/q_auto/dpr_2.0/d_it:cuisines:kebab-4.jpg/v1/it/restaurants/272064"
+              alt="Copertina ristorante"
+            />
+
+            <div class="logo-ristorante">
+              <img
+                src="https://d2egcvq7li5bpq.cloudfront.net/it/images/restaurants/272064.gif"
+                alt="Logo ristorante"
+              />
+            </div>
+          </div>
+
+          <div class="corpo">
+            <h3 class="titolo">Bala Pub & Grill</h3>
+
+            <div class="meta">
+              <span class="stella" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="m12.288 14.449-4.183-2.197a.219.219 0 0 0-.21 0L3.713 14.45 4.5 9.794a.254.254 0 0 0 0-.193L1.07 6.302l4.673-.682a.228.228 0 0 0 .166-.114L8 1.271l2.091 4.235a.227.227 0 0 0 .167.114l4.672.682-3.386 3.3a.254.254 0 0 0-.061.192l.805 4.655Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="pallino"></span>
+
+              <span class="tempo">
+                <span class="icona-orologio" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                      d="M8 14.781A6.782 6.782 0 1 1 14.781 8 6.79 6.79 0 0 1 8 14.781Zm0-12.25A5.469 5.469 0 1 0 8 13.47 5.469 5.469 0 0 0 8 2.53Z"
+                    ></path>
+                    <path
+                      d="m10.284 10.31-2.94-1.759V4.5h1.312v3.308l2.31 1.382-.682 1.12Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>15-35 min</span>
+              </span>
+            </div>
+
+            <div class="consegna">
+              <span class="icona-bici" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="M12.139 7.405 11 4.158a.218.218 0 0 1 0-.157.246.246 0 0 1 .158-.123l1.216-.446v-1.4l-1.627.613a1.514 1.514 0 0 0-.998 1.933l.359 1.015H9.75a2.433 2.433 0 0 0-1.925.963l-1.207 1.61-1.06-2.135h.692V4.718h-3.5v1.313H4.09l.726 1.461a2.87 2.87 0 0 0-.735-.105 2.826 2.826 0 1 0 2.826 2.818v-.201l1.97-2.66a1.111 1.111 0 0 1 .874-.438h.831l.254.717a2.844 2.844 0 1 0 1.313-.218h-.01Zm-8.059 4.314a1.514 1.514 0 1 1 1.514-1.514 1.505 1.505 0 0 1-1.514 1.514Zm7.875 0a1.514 1.514 0 1 1 1.401-.934 1.505 1.505 0 0 1-1.4.934Z"
+                  ></path>
+                </svg>
+              </span>
+              <span>0,49€ Consegna</span>
+            </div>
+          </div>
+        </article>
+        <!------------------------------------>
+        <article class="carta-ristorante">
+          <div class="vetrina">
+            <img
+              src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_thumb,w_937,h_400/f_auto/q_auto/dpr_2.0/d_it:cuisines:dolci-8.jpg/v1/it/restaurants/211758"
+              alt="Copertina ristorante"
+            />
+
+            <div class="logo-ristorante">
+              <img
+                src="https://d2egcvq7li5bpq.cloudfront.net/it/images/restaurants/211758.gif"
+                alt="Logo ristorante"
+              />
+            </div>
+          </div>
+
+          <div class="corpo">
+            <h3 class="titolo">Ultras Cafè</h3>
+
+            <div class="meta">
+              <span class="stella" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="m12.288 14.449-4.183-2.197a.219.219 0 0 0-.21 0L3.713 14.45 4.5 9.794a.254.254 0 0 0 0-.193L1.07 6.302l4.673-.682a.228.228 0 0 0 .166-.114L8 1.271l2.091 4.235a.227.227 0 0 0 .167.114l4.672.682-3.386 3.3a.254.254 0 0 0-.061.192l.805 4.655Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="pallino"></span>
+
+              <span class="tempo">
+                <span class="icona-orologio" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                      d="M8 14.781A6.782 6.782 0 1 1 14.781 8 6.79 6.79 0 0 1 8 14.781Zm0-12.25A5.469 5.469 0 1 0 8 13.47 5.469 5.469 0 0 0 8 2.53Z"
+                    ></path>
+                    <path
+                      d="m10.284 10.31-2.94-1.759V4.5h1.312v3.308l2.31 1.382-.682 1.12Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>15-35 min</span>
+              </span>
+            </div>
+
+            <div class="consegna">
+              <span class="icona-bici" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="M12.139 7.405 11 4.158a.218.218 0 0 1 0-.157.246.246 0 0 1 .158-.123l1.216-.446v-1.4l-1.627.613a1.514 1.514 0 0 0-.998 1.933l.359 1.015H9.75a2.433 2.433 0 0 0-1.925.963l-1.207 1.61-1.06-2.135h.692V4.718h-3.5v1.313H4.09l.726 1.461a2.87 2.87 0 0 0-.735-.105 2.826 2.826 0 1 0 2.826 2.818v-.201l1.97-2.66a1.111 1.111 0 0 1 .874-.438h.831l.254.717a2.844 2.844 0 1 0 1.313-.218h-.01Zm-8.059 4.314a1.514 1.514 0 1 1 1.514-1.514 1.505 1.505 0 0 1-1.514 1.514Zm7.875 0a1.514 1.514 0 1 1 1.401-.934 1.505 1.505 0 0 1-1.4.934Z"
+                  ></path>
+                </svg>
+              </span>
+              <span>0,49€ Consegna</span>
+            </div>
+          </div>
+        </article>
+        <!------------------------------------>
+        <article class="carta-ristorante">
+          <div class="vetrina">
+            <img
+              src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_thumb,w_937,h_400/f_auto/q_auto/dpr_2.0/d_it:cuisines:vegetariano-6.jpg/v1/it/restaurants/262736"
+              alt="Copertina ristorante"
+            />
+
+            <div class="logo-ristorante">
+              <img
+                src="https://d2egcvq7li5bpq.cloudfront.net/it/images/restaurants/262736.gif"
+                alt="Logo ristorante"
+              />
+            </div>
+          </div>
+
+          <div class="corpo">
+            <h3 class="titolo">3Mendamente Sano Gastronomia</h3>
+
+            <div class="meta">
+              <span class="stella" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="m12.288 14.449-4.183-2.197a.219.219 0 0 0-.21 0L3.713 14.45 4.5 9.794a.254.254 0 0 0 0-.193L1.07 6.302l4.673-.682a.228.228 0 0 0 .166-.114L8 1.271l2.091 4.235a.227.227 0 0 0 .167.114l4.672.682-3.386 3.3a.254.254 0 0 0-.061.192l.805 4.655Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="pallino"></span>
+
+              <span class="tempo">
+                <span class="icona-orologio" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                      d="M8 14.781A6.782 6.782 0 1 1 14.781 8 6.79 6.79 0 0 1 8 14.781Zm0-12.25A5.469 5.469 0 1 0 8 13.47 5.469 5.469 0 0 0 8 2.53Z"
+                    ></path>
+                    <path
+                      d="m10.284 10.31-2.94-1.759V4.5h1.312v3.308l2.31 1.382-.682 1.12Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>15-35 min</span>
+              </span>
+            </div>
+
+            <div class="consegna">
+              <span class="icona-bici" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="M12.139 7.405 11 4.158a.218.218 0 0 1 0-.157.246.246 0 0 1 .158-.123l1.216-.446v-1.4l-1.627.613a1.514 1.514 0 0 0-.998 1.933l.359 1.015H9.75a2.433 2.433 0 0 0-1.925.963l-1.207 1.61-1.06-2.135h.692V4.718h-3.5v1.313H4.09l.726 1.461a2.87 2.87 0 0 0-.735-.105 2.826 2.826 0 1 0 2.826 2.818v-.201l1.97-2.66a1.111 1.111 0 0 1 .874-.438h.831l.254.717a2.844 2.844 0 1 0 1.313-.218h-.01Zm-8.059 4.314a1.514 1.514 0 1 1 1.514-1.514 1.505 1.505 0 0 1-1.514 1.514Zm7.875 0a1.514 1.514 0 1 1 1.401-.934 1.505 1.505 0 0 1-1.4.934Z"
+                  ></path>
+                </svg>
+              </span>
+              <span>0,49€ Consegna</span>
+            </div>
+          </div>
+        </article>
+        <!------------------------------------>
+        <article class="carta-ristorante">
+          <div class="vetrina">
+            <img
+              src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_thumb,w_937,h_400/f_auto/q_auto/dpr_2.0/d_it:cuisines:hamburger-3.jpg/v1/it/restaurants/273103"
+              alt="Copertina ristorante"
+            />
+
+            <div class="logo-ristorante">
+              <img
+                src="https://d2egcvq7li5bpq.cloudfront.net/it/images/restaurants/273103.gif"
+                alt="Logo ristorante"
+              />
+            </div>
+          </div>
+
+          <div class="corpo">
+            <h3 class="titolo">Vite Vite Pub and Grill - Diaz</h3>
+
+            <div class="meta">
+              <span class="stella" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="m12.288 14.449-4.183-2.197a.219.219 0 0 0-.21 0L3.713 14.45 4.5 9.794a.254.254 0 0 0 0-.193L1.07 6.302l4.673-.682a.228.228 0 0 0 .166-.114L8 1.271l2.091 4.235a.227.227 0 0 0 .167.114l4.672.682-3.386 3.3a.254.254 0 0 0-.061.192l.805 4.655Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="pallino"></span>
+
+              <span class="tempo">
+                <span class="icona-orologio" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                      d="M8 14.781A6.782 6.782 0 1 1 14.781 8 6.79 6.79 0 0 1 8 14.781Zm0-12.25A5.469 5.469 0 1 0 8 13.47 5.469 5.469 0 0 0 8 2.53Z"
+                    ></path>
+                    <path
+                      d="m10.284 10.31-2.94-1.759V4.5h1.312v3.308l2.31 1.382-.682 1.12Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>15-35 min</span>
+              </span>
+            </div>
+
+            <div class="consegna">
+              <span class="icona-bici" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="M12.139 7.405 11 4.158a.218.218 0 0 1 0-.157.246.246 0 0 1 .158-.123l1.216-.446v-1.4l-1.627.613a1.514 1.514 0 0 0-.998 1.933l.359 1.015H9.75a2.433 2.433 0 0 0-1.925.963l-1.207 1.61-1.06-2.135h.692V4.718h-3.5v1.313H4.09l.726 1.461a2.87 2.87 0 0 0-.735-.105 2.826 2.826 0 1 0 2.826 2.818v-.201l1.97-2.66a1.111 1.111 0 0 1 .874-.438h.831l.254.717a2.844 2.844 0 1 0 1.313-.218h-.01Zm-8.059 4.314a1.514 1.514 0 1 1 1.514-1.514 1.505 1.505 0 0 1-1.514 1.514Zm7.875 0a1.514 1.514 0 1 1 1.401-.934 1.505 1.505 0 0 1-1.4.934Z"
+                  ></path>
+                </svg>
+              </span>
+              <span>0,49€ Consegna</span>
+            </div>
+          </div>
+        </article>
+        <!------------------------------------>
+        <article class="carta-ristorante">
+          <div class="vetrina">
+            <img
+              src="https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_thumb,w_937,h_400/f_auto/q_auto/dpr_2.0/d_it:cuisines:pizza-0.jpg/v1/it/restaurants/289050"
+              alt="Copertina ristorante"
+            />
+
+            <div class="logo-ristorante">
+              <img
+                src="https://d2egcvq7li5bpq.cloudfront.net/it/images/restaurants/289050.gif"
+                alt="Logo ristorante"
+              />
+            </div>
+          </div>
+
+          <div class="corpo">
+            <h3 class="titolo">Ristorante Pizzeria Il Granaio</h3>
+
+            <div class="meta">
+              <span class="stella" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="m12.288 14.449-4.183-2.197a.219.219 0 0 0-.21 0L3.713 14.45 4.5 9.794a.254.254 0 0 0 0-.193L1.07 6.302l4.673-.682a.228.228 0 0 0 .166-.114L8 1.271l2.091 4.235a.227.227 0 0 0 .167.114l4.672.682-3.386 3.3a.254.254 0 0 0-.061.192l.805 4.655Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="pallino"></span>
+
+              <span class="tempo">
+                <span class="icona-orologio" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                      d="M8 14.781A6.782 6.782 0 1 1 14.781 8 6.79 6.79 0 0 1 8 14.781Zm0-12.25A5.469 5.469 0 1 0 8 13.47 5.469 5.469 0 0 0 8 2.53Z"
+                    ></path>
+                    <path
+                      d="m10.284 10.31-2.94-1.759V4.5h1.312v3.308l2.31 1.382-.682 1.12Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>15-35 min</span>
+              </span>
+            </div>
+
+            <div class="consegna" id="consegna-gratis">
+              <span class="icona-bici" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                    d="M12.139 7.405 11 4.158a.218.218 0 0 1 0-.157.246.246 0 0 1 .158-.123l1.216-.446v-1.4l-1.627.613a1.514 1.514 0 0 0-.998 1.933l.359 1.015H9.75a2.433 2.433 0 0 0-1.925.963l-1.207 1.61-1.06-2.135h.692V4.718h-3.5v1.313H4.09l.726 1.461a2.87 2.87 0 0 0-.735-.105 2.826 2.826 0 1 0 2.826 2.818v-.201l1.97-2.66a1.111 1.111 0 0 1 .874-.438h.831l.254.717a2.844 2.844 0 1 0 1.313-.218h-.01Zm-8.059 4.314a1.514 1.514 0 1 1 1.514-1.514 1.505 1.505 0 0 1-1.514 1.514Zm7.875 0a1.514 1.514 0 1 1 1.401-.934 1.505 1.505 0 0 1-1.4.934Z"
+                  ></path>
+                </svg>
+              </span>
+              <span>Consegna gratuita</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- ========== GRIGLIA 3 ========== -->
+    <section class="sezione-carte" id="grid-3">
+      <div class="testata-sezione">
+        <h2 class="titolo-sezione">Consigliati vicino a te</h2>
+        <a class="azione-sezione" href="#">Vedi tutto</a>
+      </div>
+
+      <div class="corridoio-carte">
+        <!--  GRIGLIA 3 -->
       </div>
     </section>
   </body>
