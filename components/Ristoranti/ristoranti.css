@@ -6,13 +6,17 @@
 hmtl,
 body {
   font-weight: 400;
-  background-color: #f5f5f5;
+
   padding: 20px;
 }
 
-.container {
+.container-bottom-card {
+  display: flex;
   max-width: 1200px;
   margin: 0 auto;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .header {
@@ -27,6 +31,7 @@ body {
   font-size: 28px;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.76);
+  text-align: left;
 }
 
 /* icona info cerchiata */
@@ -117,6 +122,10 @@ body {
   gap: 16px;
   font-size: 14px;
   color: #666;
+}
+
+.yellow-span {
+  background-color: #ffd700;
 }
 
 .info-item {
