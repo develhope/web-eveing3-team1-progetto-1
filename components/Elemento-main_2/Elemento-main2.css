@@ -12,7 +12,7 @@
   height: 50px;
   border-radius: 30px;
 }
-input {
+.search input {
   padding: 8px 12px 8px 50px; /* spazio a sinistra per l’icona */
   border-radius: 50px;
   border: 1px solid gray;
