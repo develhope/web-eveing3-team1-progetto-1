@@ -1,0 +1,55 @@
+.piede-pagina {
+  background: #f0ece6;
+  text-align: center;
+
+  padding: 60px 40px 80px;
+  font-family: system-ui, sans-serif;
+
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.piede-pagina a {
+  text-decoration: none;
+  color: #2b2f34;
+  font-size: 16px;
+}
+
+.link-piede,
+.link-piede-secondari {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.preferenze-cookie {
+  display: inline-block;
+  margin-top: 12px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.torna-su {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #ea6a1f;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 600px) {
+  .piede-pagina {
+    padding: 50px 20px 70px;
+  }
+}

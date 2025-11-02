@@ -1,4 +1,4 @@
-@import url(/web-eveing3-team1-progetto-1/components/Card_2/card2.css);
+@import url(../Card_2/card2.css);
 
 :root {
   --gap: 30px;
@@ -49,7 +49,19 @@
   scroll-snap-align: start;
 }
 
-/* SCROLLBAR   */
+.vetrina img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.carta-ristorante {
+  flex: 0 0 auto;
+  min-width: 0;
+}
+
+/* SCROLLBAR */
 .corridoio-carte::-webkit-scrollbar {
   height: 10px;
 }
@@ -71,6 +83,7 @@
     grid-auto-columns: calc((100% - var(--gap)) / 2);
   }
 }
+
 @media (max-width: 600px) {
   .corridoio-carte {
     grid-auto-columns: 100%;

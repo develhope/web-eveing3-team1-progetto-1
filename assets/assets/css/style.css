@@ -1,19 +1,13 @@
 /* qui ci sono i css di tutte le task */
 @import url(../../../components/Button/taskButton.css);
 @import url(../../../components/Card_1/CardHomepage1.css);
-@import url(../../../components/Card_2/card2.css);
-@import url(../../../components/Elemento-main_2/Elemento-main2.css);
+
 @import url(../../../components/Footer/footer.css);
-@import url(../../../components/Griglie/griglie.css);
+
 @import url(../../../components/Navbar_1/NavbarHomepage1.css);
-@import url(../../../components/Navbar_2/NavbarHomepage2.css);
+
 @import url(../../../components/SezioneRicerca/ScaricaApp/scaricaapp.css);
 @import url(../../../components/SezioneRicerca/ScaricaApp/homeJE.css);
-@import url(../../../components/sidebar_max1024px/sidebar_max1024px.css);
-@import url(../../../components/Sidebar_min1025px/sidebar.css);
-@import url(../../../components/Card_Homepage/cardHomepage.css);
-@import url(../../../components/TopCard/topCard.css);
-@import url(../../../components/Ristoranti/ristoranti.css);
 
 .sidebar_main {
   display: grid;
