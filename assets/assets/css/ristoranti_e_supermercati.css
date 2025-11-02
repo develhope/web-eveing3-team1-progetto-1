@@ -6,42 +6,94 @@
 @import url(../../../components/Sidebar_min1025px/sidebar.css);
 @import url(../../../components/sidebar_max1024px/sidebar_max1024px.css);
 @import url(../../../components/Button/taskButton.css);
-@import url(../../../components/Footer2/footer_2.css);
 @import url(../../../components/Griglie/griglie.css);
 @import url(../../../components/Ristoranti/ristoranti_task.css);
 @import url(../../../components/Card_Homepage/cardHomepage.css);
 @import url(../../../components/Elemento-main_2/Elemento-main2.css);
 @import url(../../../components/TopCard/topCard.css);
+@import url(../../../components/Footer2/footer_2.css);
+sidebar,
+.colonna-laterale {
+  position: static !important;
+  top: auto !important;
+  align-self: stretch;
+  height: auto;
+}
 
-.sidebar_main {
+.layout-pagina {
+  width: min(var(--contenitore), 100% - (var(--gutter) * 2));
+  margin-inline: auto;
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-row: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: var(--larghezza-sidebar) 1fr;
+  gap: var(--gap-colonne);
+  padding-block: 24px 48px;
 }
 
-.sidebar {
+.colonna-contenuto {
+  min-width: 0;
+  overflow: visible;
+}
+
+@media (max-width: 900px) {
+  .layout-pagina {
+    grid-template-columns: 1fr;
+  }
+  .sidebar,
+  .colonna-laterale {
+    position: static !important;
+    top: auto !important;
+    margin-bottom: 18px;
+  }
+}
+:root {
+  --larghezza-sidebar: 300px;
+  --contenitore: 1200px;
+  --gutter: 16px;
+  --gap-colonne: 28px;
+}
+
+.testata-app {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
+  border-bottom: 1px solid #eae6e1;
+}
+
+.layout-pagina {
+  width: min(var(--contenitore), 100% - (var(--gutter) * 2));
+  margin-inline: auto;
   display: grid;
-  grid-column: 1/2;
-  grid-row: 1/-1;
-  order: 1;
+  grid-template-columns: var(--larghezza-sidebar) 1fr;
+  gap: var(--gap-colonne);
+  padding-block: 24px 48px;
 }
 
-.navbar-main {
-  display: flex;
-  order: 2;
-  gap: 40px;
-  margin-top: 10px;
-}
-html,
-body {
-  height: 100%;
+.colonna-laterale {
+  position: sticky;
+  top: 100px;
+  align-self: start;
+  height: max-content;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
+.colonna-contenuto {
+  min-width: 0;
+  overflow: visible;
 }
 
 .piede-pagina {
+  background: #f0ece6;
+  border-top: 1px solid #dcd7d2;
+  padding: 32px 0 48px;
   margin-top: auto;
+}
+
+@media (max-width: 900px) {
+  .layout-pagina {
+    grid-template-columns: 1fr;
+  }
+  .colonna-laterale {
+    position: static;
+    margin-bottom: 18px;
+  }
 }

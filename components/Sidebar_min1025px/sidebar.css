@@ -166,3 +166,64 @@ svg {
     display: none;
   }
 }
+:root {
+  --primary-color: #ea6a1f;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 16px;
+  width: 308px;
+  height: auto;
+  position: static;
+  border: none;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.sidebar {
+  height: auto;
+}
+
+.sidebar p {
+  margin: 0 0 14px;
+  font-weight: 700;
+}
+.first-section label.control-label {
+  margin-bottom: 14px;
+}
+
+.radio-item .custom-radio {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #a9a9a9;
+}
+.radio-item input[type="radio"]:checked + .custom-radio {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.switch .slider {
+  background-color: #9aa3ad;
+  border-color: #9aa3ad;
+}
+.switch input:checked + .label-text + .slider {
+  background-color: #2f7d31;
+  border-color: #2f7d31;
+}
+
+.valutazione-stelle {
+  color: var(--primary-color);
+  gap: 6px;
+}
+
+.i-circle-icon {
+  fill: var(--primary-color);
+}
+
+@media (max-width: 1025px) {
+  .sidebar {
+    display: none;
+  }
+}

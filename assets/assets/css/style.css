@@ -1,11 +1,9 @@
 /* qui ci sono i css di tutte le task */
 @import url(../../../components/Button/taskButton.css);
 @import url(../../../components/Card_1/CardHomepage1.css);
-
+@import url(../../../components/Card_Homepage/cardHomepage.css);
 @import url(../../../components/Footer/footer.css);
-
 @import url(../../../components/Navbar_1/NavbarHomepage1.css);
-
 @import url(../../../components/SezioneRicerca/ScaricaApp/scaricaapp.css);
 @import url(../../../components/SezioneRicerca/ScaricaApp/homeJE.css);
 
