@@ -227,3 +227,31 @@ svg {
     display: none;
   }
 }
+
+.valutazione-stelle {
+  flex-direction: row-reverse;
+  gap: 6px;
+}
+
+.valutazione-stelle input[type="radio"] {
+  display: none;
+}
+
+.valutazione-stelle svg {
+  width: 28px;
+  height: 28px;
+  fill: transparent;
+  stroke: var(--primary-color);
+  stroke-width: 1.5px;
+  transition: fill 0.2s ease;
+}
+
+.valutazione-stelle label:hover svg,
+.valutazione-stelle label:hover ~ label svg {
+  fill: var(--primary-color);
+}
+
+.valutazione-stelle label:has(input:checked) svg,
+.valutazione-stelle label:has(input:checked) ~ label svg {
+  fill: var(--primary-color);
+}
