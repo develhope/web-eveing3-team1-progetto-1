@@ -3,15 +3,16 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 40px;
-  background-color: transparent;
+  background-color: white;
 }
 .icona-arancione img {
+  width: 40px;
   height: 40px;
 }
 .nav-centrale {
   display: flex;
   list-style: none;
-  padding-left: 300px;
+  padding-left: 400px;
 }
 .nav-centrale a {
   display: flex;
@@ -28,12 +29,17 @@
   background-color: #f5f5f5;
   height: 20px;
 }
+.nav-centrale svg {
+  width: 24px;
+  height: 24px;
+}
 .nav-dx {
   display: flex;
   text-decoration: none; /*x togliere la line blu del link*/
   color: #242e30;
   align-items: center; /*x centrare in altezza*/
   border-radius: 25px;
+  gap: 25px; /* spazio tra Accedi, Bandiera e Hamburger */
 }
 .nav-dx a {
   display: flex;
@@ -63,26 +69,35 @@
   background-color: #f5f5f5;
   height: 20px;
 }
+
 /*bandiera*/
-.nav-dx svg {
+.nav-dx .bandiera {
   width: 24px;
   height: 24px;
-  padding: 8px 12px;
+  padding: 8px 20px;
   border-radius: 25px;
+  fill: currentColor;
+  padding-right: 20px;
 }
-.nav-dx svg:hover {
+
+.nav-dx .bandiera:hover {
   background-color: #f5f5f5;
-  height: 20px;
+  height: 30px;
+}
+
+.bandiera-container {
+  display: block; /* visibile di default */
 }
 
 .hamburger-menu {
   display: flex;
   flex-direction: column; /*fa allineare le 3 linette una sopra l'altra*/
-  width: 20px;
-  height: 18px;
+  width: 25px;
+  height: 25px;
   justify-content: space-around;
   border-radius: 25px;
-  padding: 8px 12px;
+  padding: 3px;
+  margin-left: auto;
 }
 .hamburger-menu div {
   /*indica ogni linetta in particolare*/
@@ -93,17 +108,25 @@
   background-color: #f5f5f5;
   height: 20px;
 }
+
 /*telefono*/
 @media screen and (max-width: 720px) {
+  .icona-arancione img {
+    display: block;
+    height: 20px;
+  }
   .nav-centrale {
     display: none;
   }
-  /*bandiera */
-  .nav-dx svg {
-    display: none;
+  .bandiera-container {
+    display: none !important; /* scompare su mobile */
   }
   .accedi {
     display: flex;
+  }
+  .icona-accedi {
+    width: 24px;
+    height: 24px;
   }
   .hamburger-menu {
     display: flex;
@@ -111,14 +134,18 @@
 }
 /*tablet*/
 @media screen and (min-width: 721px) and (max-width: 1024px) {
+  .icona-arancione img {
+    display: block;
+    height: 20px;
+  }
   .nav-centrale {
     display: none;
   }
   .accedi {
     display: flex;
   }
-  .nav-dx svg {
-    display: block;
+  .bandiera-container {
+    display: block; /* visibile su tablet e pc */
   }
   .hamburger-menu {
     display: flex;
@@ -126,14 +153,18 @@
 }
 /*pc*/
 @media screen and (min-width: 1025px) {
+  .icona-arancione img {
+    display: block;
+    height: 20px;
+  }
   .nav-centrale {
     display: flex;
   }
   .accedi {
     display: flex;
   }
-  .nav-dx svg {
-    display: block;
+  .bandiera-container {
+    display: block; /* visibile su tablet e pc */
   }
   .hamburger-menu {
     display: flex;
