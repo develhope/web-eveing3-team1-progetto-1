@@ -122,11 +122,6 @@ h1 {
   display: block;
 }
 
-svg {
-  display: block;
-  margin: 0 auto;
-}
-
 .poligono-arancio {
   fill: #fb6100;
 }
