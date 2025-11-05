@@ -15,6 +15,7 @@ body {
 .sidebar-main,
 .list-sidebar {
   display: flex;
+  overflow: auto;
 }
 
 .list-sidebar {
@@ -51,7 +52,7 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .sidebar_main_min {
+  .sidebar_main {
     display: none;
   }
 }

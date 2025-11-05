@@ -209,8 +209,8 @@ svg {
   border-color: #9aa3ad;
 }
 .switch input:checked + .label-text + .slider {
-  background-color: #2f7d31;
-  border-color: #2f7d31;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 .valutazione-stelle {
