@@ -15,6 +15,7 @@ body {
   padding: 0 20px;
   display: grid;
   grid-template-rows: auto auto;
+  gap: 20px;
 }
 
 /*parte sinistra*/
@@ -25,15 +26,20 @@ body {
   grid-column: 1;
 }
 
-.icon-JustEat {
+/*icona conn casa e freccia*/
+.first-part-icon {
+  display: none;
+  height: 40px;
+  padding: 15px;
+}
+
+/*icona just-eat*/
+.second-part-icon {
+  height: 40px;
+  display: block;
   padding: 15px;
   display: flex;
   align-items: center;
-}
-
-.first-part-icon,
-.second-part-icon {
-  height: 40px;
 }
 
 /*parte centro*/
@@ -195,14 +201,13 @@ li a {
     display: grid;
     padding: 0 10px;
   }
-  .icon-JustEat {
+  .second-part-icon {
     padding: 10px 5px;
   }
   .first-part-icon {
     height: 30px;
   }
   .left-side {
-    order: 1;
     grid-column: 1;
     grid-row: 1;
   }
@@ -241,6 +246,9 @@ li a {
 @media screen and (max-width: 720px) {
   .right-side svg {
     display: none;
+  }
+  .first-part-icon {
+    display: block;
   }
   .second-part-icon {
     display: none;
