@@ -7,16 +7,14 @@ hmtl,
 body {
   font-weight: 400;
 
-  padding: 20px;
+  padding: 20px 0 0 0;
 }
 
 .container-bottom-card {
   display: flex;
-  max-width: 1200px;
   margin: 0 auto;
   flex-direction: column;
   flex-wrap: nowrap;
-  align-items: center;
 }
 
 .header {
@@ -89,6 +87,7 @@ body {
   font-weight: 600;
   color: rgba(0, 0, 0, 0.76);
   margin-bottom: 8px;
+  text-align: left;
 }
 
 .rating-section {

@@ -225,7 +225,7 @@ li a {
     grid-row: 1;
     justify-content: center;
     align-self: center;
-    margin-top: 30px;
+    width: 450px;
   }
   .two-buttons {
     grid-row: 2;

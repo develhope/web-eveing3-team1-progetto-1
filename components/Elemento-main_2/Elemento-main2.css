@@ -75,9 +75,10 @@ da 1025 in poi si vede tutto il resto*/
 @media screen and (max-width: 1024px) {
   .navbar {
     display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
   }
   .navbar-main {
-    gap: 14px;
   }
   input {
     width: 100%;
@@ -96,5 +97,9 @@ da 1025 in poi si vede tutto il resto*/
   .maps {
     display: grid;
     color: #f36805;
+  }
+  .search input {
+    width: 790px;
+    background-color: #f6f3ef;
   }
 }

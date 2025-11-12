@@ -106,7 +106,8 @@ article {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .telefono {
-    width: 160px;
+  .scarica-app-ios,
+  .scarica-app-android {
+    width: 200px;
   }
 }
