@@ -109,11 +109,15 @@ h1 {
 .food-image-container {
   position: relative;
   margin-top: 80px;
+  width: 100%;
+  max-width: 500px;
 }
 
 .food-image {
-  width: auto;
-  height: 440px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
 }
 
 .hero-image-section_slopeehNdR {
@@ -140,9 +144,10 @@ h1 {
     width: 100%;
     height: auto;
     align-items: center;
+    text-align: center;
   }
   .middle-section {
-    height: 108.838px;
+    height: 80px;
     width: 100%;
     transform: rotate();
   }
@@ -150,5 +155,22 @@ h1 {
   .middle-section svg polygon {
     width: 100vw;
     height: auto;
+  }
+  .food-image {
+    width: 100%;
+    height: auto;
+  }
+  h1 {
+    font-size: 2.3rem;
+  }
+  .subtitle {
+    font-size: 1.3rem;
+  }
+  .search-container {
+    max-width: 100%;
+  }
+  .search-input {
+    padding: 18px 20px;
+    font-size: 1rem;
   }
 }

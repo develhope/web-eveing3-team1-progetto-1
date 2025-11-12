@@ -13,6 +13,29 @@ body {
   --gutter: 16px;
 }
 
+p {
+  text-align: center;
+  font-family: JETSansDigital, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  color: rgb(0, 0, 0, 0.76);
+  margin: 0; /*x non lasciare spazio tra h3 e h2*/
+  display: block;
+  padding-top: 100px;
+}
+h2 {
+  color: #f36805;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 56px;
+  font-family: JETSansDigital, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin: 0;
+  display: block;
+}
+
 .pagina {
   max-width: var(--container);
   width: min(var(--container), 100% - (var(--gutter) * 2));
@@ -82,7 +105,27 @@ body {
 }
 @media (max-width: 900px) {
   .griglia {
-    grid-template-columns: 1fr;
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding: 0 16px;
+    margin: 0 -16px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  .griglia::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    min-width: 100%;
+  }
+
+  .elenco,
+  .paragrafo {
+    font-size: 15px;
   }
 }
 
